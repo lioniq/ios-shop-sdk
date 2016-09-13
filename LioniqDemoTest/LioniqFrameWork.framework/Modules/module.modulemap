@@ -1,0 +1,10 @@
+framework module LioniqFrameWork {
+  umbrella header "LioniqFrameWork.h"
+
+  export *
+  module * { export * }
+}
+
+module LioniqFrameWork.Swift {
+    header "LioniqFrameWork-Swift.h"
+}
