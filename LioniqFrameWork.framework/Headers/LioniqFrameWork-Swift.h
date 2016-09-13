@@ -92,13 +92,21 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 # endif
 #endif
 #if defined(__has_feature) && __has_feature(modules)
-@import UIKit;
 @import WebKit;
+@import CoreGraphics;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class WKWebViewConfiguration;
+
+SWIFT_CLASS("_TtC15LioniqFrameWork10LIQWebview")
+@interface LIQWebview : WKWebView
+- (void)reloadForApp:(NSString * _Nonnull)appKey appSecret:(NSString * _Nonnull)appSecret;
+- (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSCoder;
 
 SWIFT_CLASS("_TtC15LioniqFrameWork23LioniqWebViewController")
@@ -118,7 +126,6 @@ SWIFT_CLASS("_TtC15LioniqFrameWork23LioniqWebViewController")
 - (void)loadFile;
 @end
 
-@class WKWebView;
 @class WKNavigation;
 @class NSError;
 
