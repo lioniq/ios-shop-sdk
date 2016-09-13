@@ -94,47 +94,18 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import WebKit;
 @import CoreGraphics;
-@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class NSURL;
 @class WKWebViewConfiguration;
 
 SWIFT_CLASS("_TtC15LioniqFrameWork10LIQWebview")
 @interface LIQWebview : WKWebView
+@property (nonatomic, strong) NSURL * _Nullable url;
 - (void)reloadForApp:(NSString * _Nonnull)appKey appSecret:(NSString * _Nonnull)appSecret;
 - (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSCoder;
-
-SWIFT_CLASS("_TtC15LioniqFrameWork23LioniqWebViewController")
-@interface LioniqWebViewController : UIViewController
-- (nonnull instancetype)initWithConfig:(WKWebViewConfiguration * _Nullable)config OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init;
-- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
-- (void)viewDidLoad;
-- (void)viewWillAppear:(BOOL)animated;
-@end
-
-@class NSURL;
-
-@interface LioniqWebViewController (SWIFT_EXTENSION(LioniqFrameWork))
-- (void)loadURL:(NSURL * _Nonnull)URL;
-- (void)loadURLString:(NSString * _Nonnull)URLString;
-- (void)loadFile;
-@end
-
-@class WKNavigation;
-@class NSError;
-
-@interface LioniqWebViewController (SWIFT_EXTENSION(LioniqFrameWork)) <WKNavigationDelegate>
-- (void)webView:(WKWebView * _Nonnull)webView didStartProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation;
-- (void)webView:(WKWebView * _Nonnull)webView didCommitNavigation:(WKNavigation * _Null_unspecified)navigation;
-- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
-- (void)webView:(WKWebView * _Nonnull)webView didFailProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
-- (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 @end
 
 #pragma clang diagnostic pop
