@@ -18,6 +18,7 @@
 		9D20ABB41D87D9AF002D568F /* LioniqDemoTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20ABB31D87D9AF002D568F /* LioniqDemoTestUITests.swift */; };
 		9D20ABC21D87E3B9002D568F /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20ABC11D87E3B9002D568F /* ShoppingCartViewController.swift */; };
 		9D20ABC41D87E3CD002D568F /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20ABC31D87E3CD002D568F /* ShopViewController.swift */; };
+		9D45925F1D8953D20060262C /* webviews in Resources */ = {isa = PBXBuildFile; fileRef = 9D45925E1D8953D20060262C /* webviews */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		9D20ABB51D87D9AF002D568F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D20ABC11D87E3B9002D568F /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
 		9D20ABC31D87E3CD002D568F /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		9D45925E1D8953D20060262C /* webviews */ = {isa = PBXFileReference; lastKnownFileType = folder; path = webviews; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		9D20AB921D87D9AF002D568F /* LioniqDemoTest */ = {
 			isa = PBXGroup;
 			children = (
+				9D45925E1D8953D20060262C /* webviews */,
 				9D20AB931D87D9AF002D568F /* AppDelegate.swift */,
 				9D20ABC31D87E3CD002D568F /* ShopViewController.swift */,
 				9D20ABC11D87E3B9002D568F /* ShoppingCartViewController.swift */,
@@ -267,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D45925F1D8953D20060262C /* webviews in Resources */,
 				9D20AB9E1D87D9AF002D568F /* LaunchScreen.storyboard in Resources */,
 				9D20AB9B1D87D9AF002D568F /* Assets.xcassets in Resources */,
 				9D20AB991D87D9AF002D568F /* Main.storyboard in Resources */,

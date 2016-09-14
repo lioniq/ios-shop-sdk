@@ -98,12 +98,10 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
-@class NSURL;
 @class WKWebViewConfiguration;
 
 SWIFT_CLASS("_TtC15LioniqFrameWork10LIQWebview")
 @interface LIQWebview : WKWebView
-@property (nonatomic, strong) NSURL * _Nullable url;
 - (void)reloadForApp:(NSString * _Nonnull)appKey appSecret:(NSString * _Nonnull)appSecret;
 - (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration OBJC_DESIGNATED_INITIALIZER;
 @end
