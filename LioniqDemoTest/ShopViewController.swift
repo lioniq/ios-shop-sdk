@@ -12,16 +12,12 @@ import LioniqFrameWork
 
 class ShopViewController: UIViewController {
 
-    @IBOutlet weak var webview: UIWebView!
-    
     var wv: LIQWebview?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.wv = LIQWebview(frame: UIScreen.mainScreen().bounds)
         wv!.reloadForApp("d7d831e5163fabfe70755b9a33c4e349", appSecret: "53860b4e38b11647c00e0b22d03f6aa3")
-        self.webview.hidden = true
         self.view.addSubview(wv!)
         
         

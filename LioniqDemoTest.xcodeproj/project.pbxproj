@@ -232,15 +232,18 @@
 					9D20AB8F1D87D9AF002D568F = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = ZUHYDF6KZU;
+						LastSwiftMigration = 0800;
 					};
 					9D20ABA31D87D9AF002D568F = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = ZUHYDF6KZU;
+						LastSwiftMigration = 0800;
 						TestTargetID = 9D20AB8F1D87D9AF002D568F;
 					};
 					9D20ABAE1D87D9AF002D568F = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = ZUHYDF6KZU;
+						LastSwiftMigration = 0800;
 						TestTargetID = 9D20AB8F1D87D9AF002D568F;
 					};
 				};
@@ -453,6 +456,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.LioniqDemoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -469,6 +473,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.LioniqDemoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -480,6 +485,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.LioniqDemoTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LioniqDemoTest.app/LioniqDemoTest";
 			};
 			name = Debug;
@@ -492,6 +498,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.LioniqDemoTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LioniqDemoTest.app/LioniqDemoTest";
 			};
 			name = Release;
@@ -503,6 +510,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.LioniqDemoTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = LioniqDemoTest;
 			};
 			name = Debug;
@@ -514,6 +522,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.LioniqDemoTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_TARGET_NAME = LioniqDemoTest;
 			};
 			name = Release;
