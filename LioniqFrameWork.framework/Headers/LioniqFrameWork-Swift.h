@@ -105,8 +105,10 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC15LioniqFrameWork10LIQWebview")
 @interface LIQWebview : WKWebView
 - (void)awakeFromNib;
-- (void)reloadForApp:(NSString * _Nonnull)appKey appSecret:(NSString * _Nonnull)appSecret;
-- (void)reloadAppForUser:(NSString * _Nonnull)appKey appSecret:(NSString * _Nonnull)appSecret userId:(NSString * _Nonnull)userId;
+- (void)reloadShop:(NSString * _Nonnull)key secret:(NSString * _Nonnull)secret userId:(NSString * _Nullable)userId;
+- (void)reloadCart:(NSString * _Nonnull)key secret:(NSString * _Nonnull)secret userId:(NSString * _Nullable)userId;
+- (void)reloadShopForUser:(NSString * _Nullable)userId;
+- (void)reloadCartForUser:(NSString * _Nullable)userId;
 - (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

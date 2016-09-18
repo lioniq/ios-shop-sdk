@@ -15,10 +15,8 @@ class ShopViewController: UIViewController {
     var wv: LIQWebview?
     override func viewDidLoad() {
         super.viewDidLoad()
-        LoadManager.defaultManager.appKey = "d7d831e5163fabfe70755b9a33c4e349"
-        LoadManager.defaultManager.appSecret = "53860b4e38b11647c00e0b22d03f6aa3"
         self.wv = LIQWebview(frame: UIScreen.mainScreen().bounds)
-        wv!.reloadForApp(LoadManager.defaultManager.appKey!, appSecret: LoadManager.defaultManager.appSecret!)
+        self.wv?.reloadShop("d7d831e5163fabfe70755b9a33c4e349", secret: "53860b4e38b11647c00e0b22d03f6aa3", userId: "2d62c931289901240e819f03ecef58a1")
         self.view.addSubview(wv!)
     }
     override func didReceiveMemoryWarning() {
