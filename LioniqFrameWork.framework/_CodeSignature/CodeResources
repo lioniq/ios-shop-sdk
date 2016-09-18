@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/LioniqFrameWork-Swift.h</key>
 		<data>
-		kH4EAB6XZQ2gTGeS/grtsA8xDtE=
+		TyFQ6OFm5LjnghULhcRDdX+O43A=
 		</data>
 		<key>Headers/LioniqFrameWork.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/LioniqFrameWork.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		Wx909JW2JFC5TxgFbjoNsAmHBU4=
+		iraDmhpnET9fTBevnrL3NDU6Wco=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -56,13 +56,17 @@
 		<data>
 		x9h03ms5B5iYSvNxauHYod815Uc=
 		</data>
+		<key>cart_build.html</key>
+		<data>
+		PYVS4WZ0D+njao9jEJaGmgp4kiI=
+		</data>
 		<key>eca2c26759a009a4a9361151efe99e74.svg</key>
 		<data>
 		t1lmUVeWssMv8b4TM3xdDH4Pa8o=
 		</data>
-		<key>index.html</key>
+		<key>index_build.html</key>
 		<data>
-		G9EwCECsCJYPd97ahf5QuNpw+IM=
+		hkWryLNoVY1i07/0uAoqaiXPZqg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -104,11 +108,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kH4EAB6XZQ2gTGeS/grtsA8xDtE=
+			TyFQ6OFm5LjnghULhcRDdX+O43A=
 			</data>
 			<key>hash2</key>
 			<data>
-			wsfiwkeVPnBz/XRfOe21LEYkMxNJpU0ok+SxhoAoJGw=
+			bQU1zTNK+PWg9aiJ3VolH1E8jAL0t8shgsvObq0kvg4=
 			</data>
 		</dict>
 		<key>Headers/LioniqFrameWork.h</key>
@@ -137,11 +141,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Wx909JW2JFC5TxgFbjoNsAmHBU4=
+			iraDmhpnET9fTBevnrL3NDU6Wco=
 			</data>
 			<key>hash2</key>
 			<data>
-			04/FrYCATTDVD5+uNGJCelgg+1p1yeXO7GFcm3z7TVk=
+			m2+xlek0WWlhIdfwHTjF/LQmM+PzpwqECjqXe9VFSR4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -166,6 +170,17 @@
 			MXK6YQyanjS7TZEJt/K29YNzb59WvEpzfZ0kRFUeccA=
 			</data>
 		</dict>
+		<key>cart_build.html</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PYVS4WZ0D+njao9jEJaGmgp4kiI=
+			</data>
+			<key>hash2</key>
+			<data>
+			G3gAwm1v0Q50bAs1F87RF6FW9jpaDV/kNNeuv0AtTDQ=
+			</data>
+		</dict>
 		<key>eca2c26759a009a4a9361151efe99e74.svg</key>
 		<dict>
 			<key>hash</key>
@@ -177,15 +192,15 @@
 			oUpLdS+SoLJFwf4bzA3iKD7TCm66oLkTpAQlVJ2s1wc=
 			</data>
 		</dict>
-		<key>index.html</key>
+		<key>index_build.html</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			G9EwCECsCJYPd97ahf5QuNpw+IM=
+			hkWryLNoVY1i07/0uAoqaiXPZqg=
 			</data>
 			<key>hash2</key>
 			<data>
-			bnEAIAkLIB1GrTtDmhj4iH9MXj/1/CGCj0IT9JxOrNA=
+			/qXxHXrUkU0u641lozXbS/vpf0kGwDZtRMlIhfv3Ss4=
 			</data>
 		</dict>
 	</dict>

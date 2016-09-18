@@ -94,7 +94,6 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import WebKit;
 @import CoreGraphics;
-@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -120,15 +119,6 @@ SWIFT_CLASS("_TtC15LioniqFrameWork10LIQWebview")
 - (void)webView:(WKWebView * _Nonnull)webView didStartProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
-@end
-
-
-SWIFT_CLASS("_TtC15LioniqFrameWork11LoadManager")
-@interface LoadManager : NSObject
-@property (nonatomic, copy) NSString * _Nullable appKey;
-@property (nonatomic, copy) NSString * _Nullable appSecret;
-@property (nonatomic, copy) NSString * _Nullable userId;
-+ (LoadManager * _Nonnull)defaultManager;
 @end
 
 #pragma clang diagnostic pop
