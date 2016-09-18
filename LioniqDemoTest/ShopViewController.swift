@@ -15,20 +15,11 @@ class ShopViewController: UIViewController {
     var wv: LIQWebview?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        LoadManager.defaultManager.appKey = "d7d831e5163fabfe70755b9a33c4e349"
+        LoadManager.defaultManager.appSecret = "53860b4e38b11647c00e0b22d03f6aa3"
         self.wv = LIQWebview(frame: UIScreen.mainScreen().bounds)
-        wv!.reloadForApp("d7d831e5163fabfe70755b9a33c4e349", appSecret: "53860b4e38b11647c00e0b22d03f6aa3")
+        wv!.reloadForApp(LoadManager.defaultManager.appKey!, appSecret: LoadManager.defaultManager.appSecret!)
         self.view.addSubview(wv!)
-        
-        
-//        let path = NSBundle.mainBundle().pathForResource("index", ofType: "html",inDirectory: "webviews")
-//        let url = NSURL(fileURLWithPath: path!)
-////        let url = NSURL(fileURLWithPath: "/Users/impressly/ios/lioniq-ios/LioniqDemoTest/webviews/index.html")
-////        
-//        let htmlString = try! NSString(contentsOfURL: url, encoding: NSUTF8StringEncoding)
-//        var keyInjected = htmlString.stringByReplacingOccurrencesOfString("TEMPLATE_APP_KEY", withString: "d7d831e5163fabfe70755b9a33c4e349")
-//        keyInjected = keyInjected.stringByReplacingOccurrencesOfString("TEMPLATE_APP_SECRET", withString: "53860b4e38b11647c00e0b22d03f6aa3")
-//        self.webview.loadHTMLString(keyInjected, baseURL: url)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
