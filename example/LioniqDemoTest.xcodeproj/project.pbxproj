@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11308E321D8801CD00C442CE /* LioniqFrameWork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11308E2F1D88015F00C442CE /* LioniqFrameWork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11308E331D8801DA00C442CE /* LioniqFrameWork.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11308E2F1D88015F00C442CE /* LioniqFrameWork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		11308E341D8801EE00C442CE /* LioniqFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11308E2F1D88015F00C442CE /* LioniqFrameWork.framework */; };
 		9D20AB941D87D9AF002D568F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20AB931D87D9AF002D568F /* AppDelegate.swift */; };
 		9D20AB991D87D9AF002D568F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D20AB971D87D9AF002D568F /* Main.storyboard */; };
 		9D20AB9B1D87D9AF002D568F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D20AB9A1D87D9AF002D568F /* Assets.xcassets */; };
@@ -18,6 +15,8 @@
 		9D20ABB41D87D9AF002D568F /* LioniqDemoTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20ABB31D87D9AF002D568F /* LioniqDemoTestUITests.swift */; };
 		9D20ABC21D87E3B9002D568F /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20ABC11D87E3B9002D568F /* ShoppingCartViewController.swift */; };
 		9D20ABC41D87E3CD002D568F /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20ABC31D87E3CD002D568F /* ShopViewController.swift */; };
+		9D379F7C1D8FCA270088A25F /* LioniqFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D379F7A1D8FCA190088A25F /* LioniqFrameWork.framework */; };
+		9D379F7D1D8FCA270088A25F /* LioniqFrameWork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D379F7A1D8FCA190088A25F /* LioniqFrameWork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,31 +37,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9D20ABC91D87EA94002D568F /* Embed Frameworks */ = {
+		9D4914181D8F8B30001E8195 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstSubfolderSpec = 7;
 			files = (
-				11308E321D8801CD00C442CE /* LioniqFrameWork.framework in Embed Frameworks */,
 			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D20ABCA1D87EAB9002D568F /* CopyFiles */ = {
+		9D49141C1D8F8B73001E8195 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				11308E331D8801DA00C442CE /* LioniqFrameWork.framework in CopyFiles */,
+				9D379F7D1D8FCA270088A25F /* LioniqFrameWork.framework in Embed Frameworks */,
 			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		11308E2F1D88015F00C442CE /* LioniqFrameWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LioniqFrameWork.framework; sourceTree = "<group>"; };
 		9D20AB901D87D9AF002D568F /* LioniqDemoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LioniqDemoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D20AB931D87D9AF002D568F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D20AB981D87D9AF002D568F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +74,7 @@
 		9D20ABB51D87D9AF002D568F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D20ABC11D87E3B9002D568F /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
 		9D20ABC31D87E3CD002D568F /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		9D379F7A1D8FCA190088A25F /* LioniqFrameWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LioniqFrameWork.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11308E341D8801EE00C442CE /* LioniqFrameWork.framework in Frameworks */,
+				9D379F7C1D8FCA270088A25F /* LioniqFrameWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +106,7 @@
 		9D20AB871D87D9AF002D568F = {
 			isa = PBXGroup;
 			children = (
-				11308E2F1D88015F00C442CE /* LioniqFrameWork.framework */,
+				9D379F7A1D8FCA190088A25F /* LioniqFrameWork.framework */,
 				9D20AB921D87D9AF002D568F /* LioniqDemoTest */,
 				9D20ABA71D87D9AF002D568F /* LioniqDemoTestTests */,
 				9D20ABB21D87D9AF002D568F /* LioniqDemoTestUITests */,
@@ -168,8 +166,8 @@
 				9D20AB8C1D87D9AF002D568F /* Sources */,
 				9D20AB8D1D87D9AF002D568F /* Frameworks */,
 				9D20AB8E1D87D9AF002D568F /* Resources */,
-				9D20ABC91D87EA94002D568F /* Embed Frameworks */,
-				9D20ABCA1D87EAB9002D568F /* CopyFiles */,
+				9D4914181D8F8B30001E8195 /* CopyFiles */,
+				9D49141C1D8F8B73001E8195 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -447,6 +445,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/LioniqDemoTest",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
 				);
 				INFOPLIST_FILE = LioniqDemoTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -464,6 +463,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/LioniqDemoTest",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
 				);
 				INFOPLIST_FILE = LioniqDemoTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
