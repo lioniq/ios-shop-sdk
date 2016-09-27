@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Cbh-Ky-QJj">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Shopping Cart View Controller-->
+        <scene sceneID="hAQ-cd-diq">
+            <objects>
+                <viewController storyboardIdentifier="cart" id="2o8-nY-QLG" customClass="ShoppingCartViewController" customModule="LioniqDemoTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xab-EF-NGS"/>
+                        <viewControllerLayoutGuide type="bottom" id="UqA-Nn-EGr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bq2-ij-pt6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3TW-6J-Byh">
+                                <color key="backgroundColor" red="0.28958413" green="0.31462949509999999" blue="0.32950475810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3TW-6J-Byh" firstAttribute="bottom" secondItem="Bq2-ij-pt6" secondAttribute="bottomMargin" id="Mdr-ed-OGl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3TW-6J-Byh" secondAttribute="trailing" constant="-20" id="QJk-Ig-LX4"/>
+                            <constraint firstItem="3TW-6J-Byh" firstAttribute="leading" secondItem="Bq2-ij-pt6" secondAttribute="leadingMargin" constant="-20" id="eUH-hd-0yk"/>
+                            <constraint firstItem="3TW-6J-Byh" firstAttribute="top" secondItem="Bq2-ij-pt6" secondAttribute="topMargin" id="vsy-MZ-xZs"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dCX-nr-MEN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vu8-Zy-QxN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1688.8" y="359.37031484257875"/>
+        </scene>
+        <!--cart-->
+        <scene sceneID="1yr-rl-yhF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cbh-Ky-QJj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="cart" image="second" id="kNa-nB-lOc"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fDL-og-qNH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2o8-nY-QLG" kind="relationship" relationship="rootViewController" id="U59-Yh-PeC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m8j-ia-nxn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>

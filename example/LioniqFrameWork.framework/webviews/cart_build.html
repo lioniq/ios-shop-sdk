@@ -8,6 +8,26 @@
       var APP_KEY = "TEMPLATE_APP_KEY";
       var APP_SECRET = "TEMPLATE_APP_SECRET";
       var APP_SHOP_USER = "TEMPLATE_APP_SHOP_USER";
+
+      // global callbacks
+      var didItemDetail = function() {
+        console.log("[didItemDetail]");
+        try {
+          webkit.messageHandlers.didItemDetail.postMessage("itemDetail");
+        } catch (e) {
+          console.log("[didItemDetail] error happened: " + e);
+        }
+      };
+
+      var didMain = function() {
+        console.log("[didCart]");
+        try {
+          webkit.messageHandlers.didMain.postMessage("cart");
+        } catch (e) {
+          console.log("[didCart] error happened: " + e);
+        }
+      };
+      
     </script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

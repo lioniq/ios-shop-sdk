@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>商城首页 | LionIQ Template</title>
+
+    <script type="text/javascript">
+      var APP_KEY = "TEMPLATE_APP_KEY";
+      var APP_SECRET = "TEMPLATE_APP_SECRET";
+      var APP_SHOP_USER = "TEMPLATE_APP_SHOP_USER";
+
+      /*
+       * global callbacks
+       * used to callback to native app
+       */
+
+      // callback when router switched to Banner view
+      var didBanner = function() {
+        console.log("[didBanner]");
+        try {
+          webkit.messageHandlers.didBanner.postMessage("banner");
+        } catch (e) {
+          console.log("[didBanner] error happened: " + e);
+        }
+      };
+
+      // callback when router switched to ItemDetail view
+      var didItemDetail = function() {
+        console.log("[didItemDetail]");
+        try {
+          webkit.messageHandlers.didItemDetail.postMessage("itemDetail");
+        } catch (e) {
+          console.log("[didItemDetail] error happened: " + e);
+        }
+      };
+
+      // callback when Item data is fetched from API
+      var didLoadItemDetail = function(itemData) {
+        console.log("[didLoadItemDetail]");
+        try {
+          webkit.messageHandlers.didLoadItemDetail.postMessage(itemData);
+        } catch (e) {
+          console.log("[didLoadItemDetail] error happened: " + e);
+        }
+      };
+
+      // callback when item added to cart
+      var didAddToCart = function(itemData) {
+        console.log("[didAddToCart]");
+        try {
+          webkit.messageHandlers.didAddToCart.postMessage(itemData);
+        } catch (e) {
+          console.log("[didAddToCart] error happened: " + e);
+        }
+      };
+
+      // callback when router switched to Shop view
+      var didMain = function() {
+        console.log("[didShop]");
+        try {
+          webkit.messageHandlers.didMain.postMessage("shop");
+        } catch (e) {
+          console.log("[didShop] error happened: " + e);
+        }
+      };
+
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="dist/commons.chunk.js"></script>
+    <script src="dist/main.js"></script>
+
+  </body>
+</html>
+

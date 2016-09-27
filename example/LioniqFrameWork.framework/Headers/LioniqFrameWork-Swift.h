@@ -93,32 +93,42 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import WebKit;
-@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
-@class WKWebViewConfiguration;
+@protocol LIQWebviewDelegate;
+@class UINavigationBar;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC15LioniqFrameWork10LIQWebview")
 @interface LIQWebview : WKWebView
+@property (nonatomic, strong) id <LIQWebviewDelegate> _Nullable delegate;
+@property (nonatomic, strong) UINavigationBar * _Nullable navigationBar;
 - (void)awakeFromNib;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)reloadShop:(NSString * _Nonnull)key secret:(NSString * _Nonnull)secret userId:(NSString * _Nullable)userId;
 - (void)reloadCart:(NSString * _Nonnull)key secret:(NSString * _Nonnull)secret userId:(NSString * _Nullable)userId;
 - (void)reloadShopForUser:(NSString * _Nullable)userId;
 - (void)reloadCartForUser:(NSString * _Nullable)userId;
-- (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class WKNavigation;
-@class NSError;
+@class WKUserContentController;
+@class WKScriptMessage;
 
-@interface LIQWebview (SWIFT_EXTENSION(LioniqFrameWork)) <WKNavigationDelegate>
-- (void)webView:(WKWebView * _Nonnull)webView didStartProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation;
-- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
-- (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
+@interface LIQWebview (SWIFT_EXTENSION(LioniqFrameWork)) <WKScriptMessageHandler>
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+@end
+
+
+SWIFT_PROTOCOL("_TtP15LioniqFrameWork18LIQWebviewDelegate_")
+@protocol LIQWebviewDelegate
+@optional
+- (void)webviewDidRouteToMain;
+- (void)webviewDidRouteToItemDetail;
+- (void)webviewDidRouteToBanner;
+- (void)webviewDidLoadItem:(NSDictionary<NSString *, id> * _Nonnull)dict;
+- (void)didAddToCart:(NSDictionary<NSString *, id> * _Nonnull)dict;
 @end
 
 #pragma clang diagnostic pop

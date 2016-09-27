@@ -15,7 +15,19 @@ class ShopViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.wv = LIQWebview(frame: UIScreen.mainScreen().bounds)
-        self.wv?.reloadShop("d7d831e5163fabfe70755b9a33c4e349", secret: "53860b4e38b11647c00e0b22d03f6aa3", userId: "2d62c931289901240e819f03ecef58a1")
+        self.wv?.reloadShop("f9da1ab153acaf9563f46022218866a2", secret: "673feaf2e3c6986363001787dd7d3ff1", userId: "xyz123123")
         self.view.addSubview(wv!)
+        self.wv?.delegate = self
+    }
+}
+
+extension ShopViewController: LIQWebviewDelegate {
+    func webviewDidRouteToMain() {
+        print("[FirstViewController webviewDidRouteToShop]")
+        self.navigationController?.navigationBarHidden = false
+    }
+    func webviewDidRouteToItemDetail() {
+        print("[FirstViewController webviewDidRouteToItemDetail]")
+        self.navigationController?.navigationBarHidden = true
     }
 }
