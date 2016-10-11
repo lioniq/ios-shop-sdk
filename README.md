@@ -1,50 +1,88 @@
-# LioniqFrameWork ios SDK
+# LionIQ 数据狮 iOS SDK
+
+LionIQ 数据狮专注于移动端电商插件开发，让任何APP快速完善电商功能。
 
 ## 简介
-example 文件夹里面是一个简单的接入示例，该示例仅供参考。
+本iOS库包含: 
+- `lib/Lioniq.framework` iOS 插件
+- `example/LioniqDemo.xcodeproj` 简单接入示例，该示例仅供参考。
 
 ## 版本要求
-ios SDK 要求  ios 8.0 及以上版本
+iOS SDK 要求 iOS 8.0 及以上版本, 兼容 Swift 3.0 及 Objective-C. Swift 2.3 版本请参考 `swift-2.3` 分支.
 
-## 接入方法
-#### 安装
-#### 使用 CocoaPods
+## 安装
+
+建议使用 Cocoapods 安装，也支持手动导入 Framework.
+
+### 使用 CocoaPods
 1. 在 `Podfile` 添加
 ````
-pod 'lioniq', '~> 0.1.0'
-
+pod 'lioniq', '~> 0.2.0'
 ````
+
 2. 运行 `pod install`
 
-#### 手动导入
-1. 获取 SDK
-下载 SDK, 里面包含了 lib 文件夹和 example 文件夹。lib 文件夹里面是 SDK 的文件。
+### 手动导入
+1. 下载 SDK 后, 直接拖动 `lib/Lioniq.framework` 到项目录里。
+
 2. 依赖 Frameworks：
-    必需在工程中导入:
-    ````
-    LioniqFrameWork.framework
-    ````
-3. 添加App Transport Security Settings：在 Xcode 中选择Info.plist文件，添加key: NSAllowsArbitraryLoads, value:设置为true.解决在iOS9下基于ATS对HTTP的请求的说明及适配进行说明.否则webview内容无法显示。
-4. 添加Embedded Binaries: 在Xcode中，选择你的工程设置项，选中 "TARGETS" 一栏，在 "General" 标签栏,在target ->General ->Embedded Binaries 中添加这个framework,添加成功后会自动在Linked Framework and Libraries中自动添加这个framework,如果只在Linked Framework and Libraries中添加这个framework会导致库无法载入。
-5. 添加Copy Files: 在Xcode中，选择你的工程设置项，选中 "TARGETS" 一栏，在 "Build Phases" 标签栏,点击 + 创建 New Copy Files Phase 项目，设置 Destination 为 Frameworks，点击 + 然后选择要Copy的此framework。
-6.swift 项目：在 `viewController` 中引入 `import LioniqFrameWork` 生成 `LIQWebview` 的实例就可以使用`LIQWebview` 的 `public function` 创建商城和购物车界面. 在使用之前请去后台申请生成App的 `appKey` 和 `appSecret` 示例代码如下：
+    必需在工程中导入 `Lioniq.framework`
+
+3. 添加Embedded Binaries: 
+在Xcode中，选择你的工程设置项: 
+- 选中 `"TARGETS"` 一栏, 在 `"General"` 标签栏, 在 `Embedded Binaries` 中添加这个 `Lioniq.framework`
+- 添加成功后会自动在 `Linked Framework and Libraries` 中自动添加这个 `Lioniq.framework`
+- 如果只在 `Linked Framework and Libraries` 中添加 `Lioniq.framwork` 会导致库无法载入。
+
+4. 添加Copy Files: 
+- 在Xcode中，选择你的工程设置项
+- 选中 `"TARGETS"` 一栏, 在 `"Build Phases"` 标签栏, 点击 `+` 创建 `New Copy Files Phase` 项目
+- 设置 `Destination` 为 `Frameworks`, 点击 `+` 然后选择要 `Copy` 的此 `Lioniq.framework`
+
+5. 在 Objective-C 项目中，因为此 framework 为 swift 编写，需要在 Xcode 中配置: 
+- 选择你的工程设置项
+- 选中 `"TARGETS"` 一栏
+- 在 `"Build Setting"` 标签栏
+- `Build Options` 设置 `Always Embed Swift Standard Libraries` 为 `Yes`.
+
+
+## 项目引入
+
+在 `ViewController` 中引入插件生成 `LIQWebview` 的实例就可以引入商城、及购物车界面。
+(使用前请到官网后台申请生成 `APP` 的 `APP_KEY` 和 `APP_SECRET` 帐号权限)
+
+### Swift
+
 ````
 import UIKit
-import LioniqFrameWork
+import Lioniq
 
 class ShopViewController: UIViewController {
-    var wv: LIQWebview?
+
+    // Storyboard 添加一个普通 View 作为占位 (目前无法直接 Storyboard 使用)
+    @IBOutlet weak var webviewPlaceholder: UIView!
+
+    // 插件 webview 
+    var webview: LIQWebview!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.wv = LIQWebview(frame: UIScreen.mainScreen().bounds)
-        self.wv?.reloadShop("你的_APP_KEY", secret: "你的_APP_SECRET", userId: "用户_User_ID")
-        self.view.addSubview(wv!)
+
+        // 添加到本view
+        self.webview = LIQWebview(frame: webviewPlaceholder.frame)
+        self.view.addSubview(self.webview)
+
+        // 设置代理
+        self.webview.delegate = self 
+        
+        // 实现商城
+        self.webview.reloadShop(key: "我的_APP_KEY", secret: "我的_APP_SECRET", userId: "消费者_USER_ID")
+        
     }
 }
 ````
 
-7.Objective-C 项目：在 `viewController.h` 引入 `@import LioniqFrameWork` 生成 `LIQWebview` 的实例.示例代码如下：
+### Objective-C
 
 ````
 #import "ShopViewController.h"
@@ -57,17 +95,20 @@ class ShopViewController: UIViewController {
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.wk = [[LIQWebview alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    [self.wk reloadShop:@"你的_APP_KEY" secret:@"你的_APP_SECRET" userId:@"用户_User_ID"];
-    [self.view addSubview: self.wk];
+
+    // 添加到本view
+    self.webview = [[LIQWebview alloc] initWithFrame:[self.webviewPlaceholder.frame];
+    self.view.addSubview(self.webview);
+
+    // 设置代理
+    self.webview.delegate = self;
+
+    // 实现商城
+    [self.webview reloadShop:@"我的_APP_KEY", secret: @"我的_APP_SECRET", userId: @"消费者_USER_ID"];
 }
 
 @end
 ````
-
-
-### 额外配置
-在object-c项目中,因为此framework为swift编写，需要在Xcode中，选择你的工程设置项，选中 "TARGETS" 一栏, 在 "Build Setting" 标签栏, Build Options,设置Always Embed Swift Standard Libraries 为 Yes.
 
 
 **关于如何使用 SDK 请参考 [开发者中心]()。**
