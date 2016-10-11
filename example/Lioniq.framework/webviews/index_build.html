@@ -5,6 +5,8 @@
     <title>商城首页 | LionIQ Template</title>
 
     <script type="text/javascript">
+      var API_URL = "https://lioniq.com";
+      
       var APP_KEY = "TEMPLATE_APP_KEY";
       var APP_SECRET = "TEMPLATE_APP_SECRET";
       var APP_SHOP_USER = "TEMPLATE_APP_SHOP_USER";
@@ -53,7 +55,7 @@
           console.log("[didAddToCart] error happened: " + e);
         }
       };
-
+      
       // callback when router switched to Shop view
       var didMain = function() {
         console.log("[didShop]");

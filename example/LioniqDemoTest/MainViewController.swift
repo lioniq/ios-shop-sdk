@@ -15,8 +15,8 @@ class MainViewController: UITabBarController {
     }
     
     func setupChildViewControllers() {
-        let shopVC = UIStoryboard(name: "Shop", bundle: nil).instantiateViewControllerWithIdentifier("shop") as? ShopViewController
-        let cartVC = UIStoryboard(name: "ShoppingCart", bundle: nil).instantiateViewControllerWithIdentifier("cart") as? ShoppingCartViewController
+        let shopVC = UIStoryboard(name: "Shop", bundle: nil).instantiateViewController(withIdentifier: "shop") as? ShopViewController
+        let cartVC = UIStoryboard(name: "ShoppingCart", bundle: nil).instantiateViewController(withIdentifier: "cart") as? ShoppingCartViewController
         setViewControllers([shopVC!, cartVC!], animated: true)
         self.selectedIndex = 0
     }

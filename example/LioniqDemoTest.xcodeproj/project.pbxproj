@@ -15,11 +15,11 @@
 		9D20ABB41D87D9AF002D568F /* LioniqDemoTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20ABB31D87D9AF002D568F /* LioniqDemoTestUITests.swift */; };
 		9D20ABC21D87E3B9002D568F /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20ABC11D87E3B9002D568F /* ShoppingCartViewController.swift */; };
 		9D20ABC41D87E3CD002D568F /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20ABC31D87E3CD002D568F /* ShopViewController.swift */; };
+		9DB4AC881DACDEAD006314E0 /* Lioniq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB4AC871DACDEAD006314E0 /* Lioniq.framework */; };
+		9DB4AC8A1DACDEB6006314E0 /* Lioniq.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB4AC871DACDEAD006314E0 /* Lioniq.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9DE65F2A1D9A6581003B3F26 /* Shop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE65F291D9A6581003B3F26 /* Shop.storyboard */; };
 		9DE65F2C1D9A65D0003B3F26 /* ShoppingCart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE65F2B1D9A65D0003B3F26 /* ShoppingCart.storyboard */; };
 		9DE65F2E1D9A66A0003B3F26 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE65F2D1D9A66A0003B3F26 /* MainViewController.swift */; };
-		9DE65F6F1D9A6FE9003B3F26 /* LioniqFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D379F7A1D8FCA190088A25F /* LioniqFrameWork.framework */; };
-		9DE65F701D9A6FE9003B3F26 /* LioniqFrameWork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D379F7A1D8FCA190088A25F /* LioniqFrameWork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,13 +49,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DE65F711D9A6FE9003B3F26 /* Embed Frameworks */ = {
+		9DB4AC8B1DACDEB6006314E0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9DE65F701D9A6FE9003B3F26 /* LioniqFrameWork.framework in Embed Frameworks */,
+				9DB4AC8A1DACDEB6006314E0 /* Lioniq.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,7 +77,7 @@
 		9D20ABB51D87D9AF002D568F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D20ABC11D87E3B9002D568F /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
 		9D20ABC31D87E3CD002D568F /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
-		9D379F7A1D8FCA190088A25F /* LioniqFrameWork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LioniqFrameWork.framework; sourceTree = "<group>"; };
+		9DB4AC871DACDEAD006314E0 /* Lioniq.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lioniq.framework; sourceTree = "<group>"; };
 		9DE65F291D9A6581003B3F26 /* Shop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shop.storyboard; sourceTree = "<group>"; };
 		9DE65F2B1D9A65D0003B3F26 /* ShoppingCart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShoppingCart.storyboard; sourceTree = "<group>"; };
 		9DE65F2D1D9A66A0003B3F26 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DE65F6F1D9A6FE9003B3F26 /* LioniqFrameWork.framework in Frameworks */,
+				9DB4AC881DACDEAD006314E0 /* Lioniq.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +112,7 @@
 		9D20AB871D87D9AF002D568F = {
 			isa = PBXGroup;
 			children = (
-				9D379F7A1D8FCA190088A25F /* LioniqFrameWork.framework */,
+				9DB4AC871DACDEAD006314E0 /* Lioniq.framework */,
 				9D20AB921D87D9AF002D568F /* LioniqDemoTest */,
 				9D20ABA71D87D9AF002D568F /* LioniqDemoTestTests */,
 				9D20ABB21D87D9AF002D568F /* LioniqDemoTestUITests */,
@@ -176,7 +176,7 @@
 				9D20AB8D1D87D9AF002D568F /* Frameworks */,
 				9D20AB8E1D87D9AF002D568F /* Resources */,
 				9D4914181D8F8B30001E8195 /* CopyFiles */,
-				9DE65F711D9A6FE9003B3F26 /* Embed Frameworks */,
+				9DB4AC8B1DACDEB6006314E0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -463,7 +463,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.LioniqDemoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -481,7 +481,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.LioniqDemoTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -493,7 +493,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.LioniqDemoTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LioniqDemoTest.app/LioniqDemoTest";
 			};
 			name = Debug;
@@ -506,7 +506,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.LioniqDemoTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LioniqDemoTest.app/LioniqDemoTest";
 			};
 			name = Release;
@@ -518,7 +518,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.LioniqDemoTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = LioniqDemoTest;
 			};
 			name = Debug;
@@ -530,7 +530,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.LioniqDemoTestUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = LioniqDemoTest;
 			};
 			name = Release;

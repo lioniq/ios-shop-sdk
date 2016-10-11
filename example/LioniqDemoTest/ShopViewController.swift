@@ -7,27 +7,37 @@
 //
 
 import UIKit
-import LioniqFrameWork
+import Lioniq
 
 class ShopViewController: UIViewController {
     var wv: LIQWebview?
+    @IBOutlet weak var webviewPlaceholder: UIView!
+    
+    let key = "d80bf1f7e31b899f3a22e3c23c6f96eb"
+    let secret = "c35e2b75dd8592875b40b7546310dcb0"
+    let userId = "xyz123123"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.wv = LIQWebview(frame: UIScreen.mainScreen().bounds)
-        self.wv?.reloadShop("f9da1ab153acaf9563f46022218866a2", secret: "673feaf2e3c6986363001787dd7d3ff1", userId: "xyz123123")
+        self.wv = LIQWebview(frame: webviewPlaceholder.frame)
+        self.wv?.reloadShop(key: key, secret: secret, userId: userId)
         self.view.addSubview(wv!)
         self.wv?.delegate = self
     }
 }
 
 extension ShopViewController: LIQWebviewDelegate {
-    func webviewDidRouteToMain() {
-        print("[FirstViewController webviewDidRouteToShop]")
-        self.navigationController?.navigationBarHidden = false
+    func webviewDidMain() {
+        print("[ShopViewController webviewDidRouteToMain]")
+        self.navigationController?.navigationBar.isHidden = false
+        self.tabBarController?.tabBar.isHidden = false
     }
-    func webviewDidRouteToItemDetail() {
-        print("[FirstViewController webviewDidRouteToItemDetail]")
-        self.navigationController?.navigationBarHidden = true
+    func webviewDidItemDetail() {
+        print("[ShopViewController webviewDidRouteToItemDetail]")
+        self.navigationController?.navigationBar.isHidden = true
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    func webviewDidAddToCart(dict: Dictionary<String, AnyObject>) {
+        //
     }
 }
