@@ -7,19 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D20AB941D87D9AF002D568F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20AB931D87D9AF002D568F /* AppDelegate.swift */; };
 		9D20AB991D87D9AF002D568F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D20AB971D87D9AF002D568F /* Main.storyboard */; };
-		9D20AB9B1D87D9AF002D568F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D20AB9A1D87D9AF002D568F /* Assets.xcassets */; };
 		9D20AB9E1D87D9AF002D568F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D20AB9C1D87D9AF002D568F /* LaunchScreen.storyboard */; };
-		9D20ABA91D87D9AF002D568F /* LioniqDemoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20ABA81D87D9AF002D568F /* LioniqDemoTestTests.swift */; };
-		9D20ABB41D87D9AF002D568F /* LioniqDemoTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20ABB31D87D9AF002D568F /* LioniqDemoTestUITests.swift */; };
-		9D20ABC21D87E3B9002D568F /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20ABC11D87E3B9002D568F /* ShoppingCartViewController.swift */; };
-		9D20ABC41D87E3CD002D568F /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20ABC31D87E3CD002D568F /* ShopViewController.swift */; };
 		9DB4AC881DACDEAD006314E0 /* Lioniq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB4AC871DACDEAD006314E0 /* Lioniq.framework */; };
 		9DB4AC8A1DACDEB6006314E0 /* Lioniq.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB4AC871DACDEAD006314E0 /* Lioniq.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9DE65F2A1D9A6581003B3F26 /* Shop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE65F291D9A6581003B3F26 /* Shop.storyboard */; };
-		9DE65F2C1D9A65D0003B3F26 /* ShoppingCart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DE65F2B1D9A65D0003B3F26 /* ShoppingCart.storyboard */; };
-		9DE65F2E1D9A66A0003B3F26 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE65F2D1D9A66A0003B3F26 /* MainViewController.swift */; };
+		9DB4ACDC1DACEE71006314E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD31DACEE71006314E0 /* AppDelegate.swift */; };
+		9DB4ACDD1DACEE71006314E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD41DACEE71006314E0 /* Assets.xcassets */; };
+		9DB4ACDE1DACEE71006314E0 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD51DACEE71006314E0 /* Base.lproj */; };
+		9DB4ACDF1DACEE71006314E0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD61DACEE71006314E0 /* Info.plist */; };
+		9DB4ACE11DACEE71006314E0 /* Shop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD81DACEE71006314E0 /* Shop.storyboard */; };
+		9DB4ACE21DACEE71006314E0 /* ShoppingCart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD91DACEE71006314E0 /* ShoppingCart.storyboard */; };
+		9DB4ACE31DACEE71006314E0 /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4ACDA1DACEE71006314E0 /* ShoppingCartViewController.swift */; };
+		9DB4ACE41DACEE71006314E0 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4ACDB1DACEE71006314E0 /* ShopViewController.swift */; };
+		9DB4ACE71DACEE9B006314E0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACE51DACEE9B006314E0 /* Info.plist */; };
+		9DB4ACE81DACEE9B006314E0 /* LioniqDemoTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4ACE61DACEE9B006314E0 /* LioniqDemoTestUITests.swift */; };
+		9DB4ACEB1DACEEB0006314E0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACE91DACEEB0006314E0 /* Info.plist */; };
+		9DB4ACEC1DACEEB0006314E0 /* LioniqDemoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4ACEA1DACEEB0006314E0 /* LioniqDemoTestTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +31,14 @@
 			containerPortal = 9D20AB881D87D9AF002D568F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9D20AB8F1D87D9AF002D568F;
-			remoteInfo = LioniqDemoTest;
+			remoteInfo = Demo;
 		};
 		9D20ABB01D87D9AF002D568F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9D20AB881D87D9AF002D568F /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9D20AB8F1D87D9AF002D568F;
-			remoteInfo = LioniqDemoTest;
+			remoteInfo = Demo;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -63,24 +66,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9D20AB901D87D9AF002D568F /* LioniqDemoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LioniqDemoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D20AB931D87D9AF002D568F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D20AB901D87D9AF002D568F /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D20AB981D87D9AF002D568F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9D20AB9A1D87D9AF002D568F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D20AB9D1D87D9AF002D568F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9D20AB9F1D87D9AF002D568F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D20ABA41D87D9AF002D568F /* LioniqDemoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LioniqDemoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D20ABA81D87D9AF002D568F /* LioniqDemoTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LioniqDemoTestTests.swift; sourceTree = "<group>"; };
-		9D20ABAA1D87D9AF002D568F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D20ABAF1D87D9AF002D568F /* LioniqDemoTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LioniqDemoTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D20ABB31D87D9AF002D568F /* LioniqDemoTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LioniqDemoTestUITests.swift; sourceTree = "<group>"; };
-		9D20ABB51D87D9AF002D568F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D20ABC11D87E3B9002D568F /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
-		9D20ABC31D87E3CD002D568F /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		9D20ABA41D87D9AF002D568F /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D20ABAF1D87D9AF002D568F /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB4AC871DACDEAD006314E0 /* Lioniq.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lioniq.framework; sourceTree = "<group>"; };
-		9DE65F291D9A6581003B3F26 /* Shop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shop.storyboard; sourceTree = "<group>"; };
-		9DE65F2B1D9A65D0003B3F26 /* ShoppingCart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShoppingCart.storyboard; sourceTree = "<group>"; };
-		9DE65F2D1D9A66A0003B3F26 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9DB4ACD31DACEE71006314E0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9DB4ACD41DACEE71006314E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DB4ACD51DACEE71006314E0 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
+		9DB4ACD61DACEE71006314E0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DB4ACD81DACEE71006314E0 /* Shop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shop.storyboard; sourceTree = "<group>"; };
+		9DB4ACD91DACEE71006314E0 /* ShoppingCart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShoppingCart.storyboard; sourceTree = "<group>"; };
+		9DB4ACDA1DACEE71006314E0 /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
+		9DB4ACDB1DACEE71006314E0 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		9DB4ACE51DACEE9B006314E0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DB4ACE61DACEE9B006314E0 /* LioniqDemoTestUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LioniqDemoTestUITests.swift; sourceTree = "<group>"; };
+		9DB4ACE91DACEEB0006314E0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DB4ACEA1DACEEB0006314E0 /* LioniqDemoTestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LioniqDemoTestTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +116,9 @@
 			isa = PBXGroup;
 			children = (
 				9DB4AC871DACDEAD006314E0 /* Lioniq.framework */,
-				9D20AB921D87D9AF002D568F /* LioniqDemoTest */,
-				9D20ABA71D87D9AF002D568F /* LioniqDemoTestTests */,
-				9D20ABB21D87D9AF002D568F /* LioniqDemoTestUITests */,
+				9D20AB921D87D9AF002D568F /* Demo */,
+				9D20ABA71D87D9AF002D568F /* DemoTests */,
+				9D20ABB21D87D9AF002D568F /* DemoUITests */,
 				9D20AB911D87D9AF002D568F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -123,54 +126,54 @@
 		9D20AB911D87D9AF002D568F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9D20AB901D87D9AF002D568F /* LioniqDemoTest.app */,
-				9D20ABA41D87D9AF002D568F /* LioniqDemoTestTests.xctest */,
-				9D20ABAF1D87D9AF002D568F /* LioniqDemoTestUITests.xctest */,
+				9D20AB901D87D9AF002D568F /* Demo.app */,
+				9D20ABA41D87D9AF002D568F /* DemoTests.xctest */,
+				9D20ABAF1D87D9AF002D568F /* DemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9D20AB921D87D9AF002D568F /* LioniqDemoTest */ = {
+		9D20AB921D87D9AF002D568F /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				9D20AB931D87D9AF002D568F /* AppDelegate.swift */,
-				9DE65F291D9A6581003B3F26 /* Shop.storyboard */,
-				9D20ABC31D87E3CD002D568F /* ShopViewController.swift */,
-				9DE65F2B1D9A65D0003B3F26 /* ShoppingCart.storyboard */,
-				9D20ABC11D87E3B9002D568F /* ShoppingCartViewController.swift */,
+				9DB4ACD81DACEE71006314E0 /* Shop.storyboard */,
+				9DB4ACDB1DACEE71006314E0 /* ShopViewController.swift */,
+				9DB4ACD91DACEE71006314E0 /* ShoppingCart.storyboard */,
+				9DB4ACDA1DACEE71006314E0 /* ShoppingCartViewController.swift */,
+				9DB4ACD31DACEE71006314E0 /* AppDelegate.swift */,
 				9D20AB971D87D9AF002D568F /* Main.storyboard */,
-				9DE65F2D1D9A66A0003B3F26 /* MainViewController.swift */,
-				9D20AB9A1D87D9AF002D568F /* Assets.xcassets */,
 				9D20AB9C1D87D9AF002D568F /* LaunchScreen.storyboard */,
-				9D20AB9F1D87D9AF002D568F /* Info.plist */,
+				9DB4ACD61DACEE71006314E0 /* Info.plist */,
+				9DB4ACD51DACEE71006314E0 /* Base.lproj */,
+				9DB4ACD41DACEE71006314E0 /* Assets.xcassets */,
 			);
-			path = LioniqDemoTest;
+			path = Demo;
 			sourceTree = "<group>";
 		};
-		9D20ABA71D87D9AF002D568F /* LioniqDemoTestTests */ = {
+		9D20ABA71D87D9AF002D568F /* DemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				9D20ABA81D87D9AF002D568F /* LioniqDemoTestTests.swift */,
-				9D20ABAA1D87D9AF002D568F /* Info.plist */,
+				9DB4ACE91DACEEB0006314E0 /* Info.plist */,
+				9DB4ACEA1DACEEB0006314E0 /* LioniqDemoTestTests.swift */,
 			);
-			path = LioniqDemoTestTests;
+			path = DemoTests;
 			sourceTree = "<group>";
 		};
-		9D20ABB21D87D9AF002D568F /* LioniqDemoTestUITests */ = {
+		9D20ABB21D87D9AF002D568F /* DemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				9D20ABB31D87D9AF002D568F /* LioniqDemoTestUITests.swift */,
-				9D20ABB51D87D9AF002D568F /* Info.plist */,
+				9DB4ACE51DACEE9B006314E0 /* Info.plist */,
+				9DB4ACE61DACEE9B006314E0 /* LioniqDemoTestUITests.swift */,
 			);
-			path = LioniqDemoTestUITests;
+			path = DemoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9D20AB8F1D87D9AF002D568F /* LioniqDemoTest */ = {
+		9D20AB8F1D87D9AF002D568F /* Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D20ABB81D87D9AF002D568F /* Build configuration list for PBXNativeTarget "LioniqDemoTest" */;
+			buildConfigurationList = 9D20ABB81D87D9AF002D568F /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
 				9D20AB8C1D87D9AF002D568F /* Sources */,
 				9D20AB8D1D87D9AF002D568F /* Frameworks */,
@@ -182,14 +185,14 @@
 			);
 			dependencies = (
 			);
-			name = LioniqDemoTest;
-			productName = LioniqDemoTest;
-			productReference = 9D20AB901D87D9AF002D568F /* LioniqDemoTest.app */;
+			name = Demo;
+			productName = Demo;
+			productReference = 9D20AB901D87D9AF002D568F /* Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9D20ABA31D87D9AF002D568F /* LioniqDemoTestTests */ = {
+		9D20ABA31D87D9AF002D568F /* DemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D20ABBB1D87D9AF002D568F /* Build configuration list for PBXNativeTarget "LioniqDemoTestTests" */;
+			buildConfigurationList = 9D20ABBB1D87D9AF002D568F /* Build configuration list for PBXNativeTarget "DemoTests" */;
 			buildPhases = (
 				9D20ABA01D87D9AF002D568F /* Sources */,
 				9D20ABA11D87D9AF002D568F /* Frameworks */,
@@ -200,14 +203,14 @@
 			dependencies = (
 				9D20ABA61D87D9AF002D568F /* PBXTargetDependency */,
 			);
-			name = LioniqDemoTestTests;
-			productName = LioniqDemoTestTests;
-			productReference = 9D20ABA41D87D9AF002D568F /* LioniqDemoTestTests.xctest */;
+			name = DemoTests;
+			productName = DemoTests;
+			productReference = 9D20ABA41D87D9AF002D568F /* DemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9D20ABAE1D87D9AF002D568F /* LioniqDemoTestUITests */ = {
+		9D20ABAE1D87D9AF002D568F /* DemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9D20ABBE1D87D9AF002D568F /* Build configuration list for PBXNativeTarget "LioniqDemoTestUITests" */;
+			buildConfigurationList = 9D20ABBE1D87D9AF002D568F /* Build configuration list for PBXNativeTarget "DemoUITests" */;
 			buildPhases = (
 				9D20ABAB1D87D9AF002D568F /* Sources */,
 				9D20ABAC1D87D9AF002D568F /* Frameworks */,
@@ -218,9 +221,9 @@
 			dependencies = (
 				9D20ABB11D87D9AF002D568F /* PBXTargetDependency */,
 			);
-			name = LioniqDemoTestUITests;
-			productName = LioniqDemoTestUITests;
-			productReference = 9D20ABAF1D87D9AF002D568F /* LioniqDemoTestUITests.xctest */;
+			name = DemoUITests;
+			productName = DemoUITests;
+			productReference = 9D20ABAF1D87D9AF002D568F /* DemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -252,7 +255,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9D20AB8B1D87D9AF002D568F /* Build configuration list for PBXProject "LioniqDemoTest" */;
+			buildConfigurationList = 9D20AB8B1D87D9AF002D568F /* Build configuration list for PBXProject "Demo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -265,9 +268,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9D20AB8F1D87D9AF002D568F /* LioniqDemoTest */,
-				9D20ABA31D87D9AF002D568F /* LioniqDemoTestTests */,
-				9D20ABAE1D87D9AF002D568F /* LioniqDemoTestUITests */,
+				9D20AB8F1D87D9AF002D568F /* Demo */,
+				9D20ABA31D87D9AF002D568F /* DemoTests */,
+				9D20ABAE1D87D9AF002D568F /* DemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -277,10 +280,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DE65F2A1D9A6581003B3F26 /* Shop.storyboard in Resources */,
+				9DB4ACE21DACEE71006314E0 /* ShoppingCart.storyboard in Resources */,
+				9DB4ACDF1DACEE71006314E0 /* Info.plist in Resources */,
+				9DB4ACDE1DACEE71006314E0 /* Base.lproj in Resources */,
+				9DB4ACE11DACEE71006314E0 /* Shop.storyboard in Resources */,
 				9D20AB9E1D87D9AF002D568F /* LaunchScreen.storyboard in Resources */,
-				9D20AB9B1D87D9AF002D568F /* Assets.xcassets in Resources */,
-				9DE65F2C1D9A65D0003B3F26 /* ShoppingCart.storyboard in Resources */,
+				9DB4ACDD1DACEE71006314E0 /* Assets.xcassets in Resources */,
 				9D20AB991D87D9AF002D568F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB4ACEB1DACEEB0006314E0 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB4ACE71DACEE9B006314E0 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,10 +313,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D20AB941D87D9AF002D568F /* AppDelegate.swift in Sources */,
-				9D20ABC21D87E3B9002D568F /* ShoppingCartViewController.swift in Sources */,
-				9D20ABC41D87E3CD002D568F /* ShopViewController.swift in Sources */,
-				9DE65F2E1D9A66A0003B3F26 /* MainViewController.swift in Sources */,
+				9DB4ACE31DACEE71006314E0 /* ShoppingCartViewController.swift in Sources */,
+				9DB4ACE41DACEE71006314E0 /* ShopViewController.swift in Sources */,
+				9DB4ACDC1DACEE71006314E0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D20ABA91D87D9AF002D568F /* LioniqDemoTestTests.swift in Sources */,
+				9DB4ACEC1DACEEB0006314E0 /* LioniqDemoTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D20ABB41D87D9AF002D568F /* LioniqDemoTestUITests.swift in Sources */,
+				9DB4ACE81DACEE9B006314E0 /* LioniqDemoTestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,12 +340,12 @@
 /* Begin PBXTargetDependency section */
 		9D20ABA61D87D9AF002D568F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9D20AB8F1D87D9AF002D568F /* LioniqDemoTest */;
+			target = 9D20AB8F1D87D9AF002D568F /* Demo */;
 			targetProxy = 9D20ABA51D87D9AF002D568F /* PBXContainerItemProxy */;
 		};
 		9D20ABB11D87D9AF002D568F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9D20AB8F1D87D9AF002D568F /* LioniqDemoTest */;
+			target = 9D20AB8F1D87D9AF002D568F /* Demo */;
 			targetProxy = 9D20ABB01D87D9AF002D568F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -401,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -441,7 +447,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,13 +461,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/LioniqDemoTest",
+					"$(PROJECT_DIR)/Demo",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/lib",
 				);
-				INFOPLIST_FILE = LioniqDemoTest/Info.plist;
+				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.LioniqDemoTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -473,13 +479,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/LioniqDemoTest",
+					"$(PROJECT_DIR)/Demo",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/lib",
 				);
-				INFOPLIST_FILE = LioniqDemoTest/Info.plist;
+				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.LioniqDemoTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -489,12 +495,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = LioniqDemoTestTests/Info.plist;
+				INFOPLIST_FILE = DemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.LioniqDemoTestTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.DemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LioniqDemoTest.app/LioniqDemoTest";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
 			};
 			name = Debug;
 		};
@@ -502,43 +508,43 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = LioniqDemoTestTests/Info.plist;
+				INFOPLIST_FILE = DemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.LioniqDemoTestTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.DemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LioniqDemoTest.app/LioniqDemoTest";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
 			};
 			name = Release;
 		};
 		9D20ABBF1D87D9AF002D568F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = LioniqDemoTestUITests/Info.plist;
+				INFOPLIST_FILE = DemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.LioniqDemoTestUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.DemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = LioniqDemoTest;
+				TEST_TARGET_NAME = Demo;
 			};
 			name = Debug;
 		};
 		9D20ABC01D87D9AF002D568F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = LioniqDemoTestUITests/Info.plist;
+				INFOPLIST_FILE = DemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.LioniqDemoTestUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onthetall.DemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = LioniqDemoTest;
+				TEST_TARGET_NAME = Demo;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9D20AB8B1D87D9AF002D568F /* Build configuration list for PBXProject "LioniqDemoTest" */ = {
+		9D20AB8B1D87D9AF002D568F /* Build configuration list for PBXProject "Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D20ABB61D87D9AF002D568F /* Debug */,
@@ -547,7 +553,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D20ABB81D87D9AF002D568F /* Build configuration list for PBXNativeTarget "LioniqDemoTest" */ = {
+		9D20ABB81D87D9AF002D568F /* Build configuration list for PBXNativeTarget "Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D20ABB91D87D9AF002D568F /* Debug */,
@@ -556,7 +562,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D20ABBB1D87D9AF002D568F /* Build configuration list for PBXNativeTarget "LioniqDemoTestTests" */ = {
+		9D20ABBB1D87D9AF002D568F /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D20ABBC1D87D9AF002D568F /* Debug */,
@@ -565,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9D20ABBE1D87D9AF002D568F /* Build configuration list for PBXNativeTarget "LioniqDemoTestUITests" */ = {
+		9D20ABBE1D87D9AF002D568F /* Build configuration list for PBXNativeTarget "DemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D20ABBF1D87D9AF002D568F /* Debug */,

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:LioniqDemoTest.xcodeproj">
+      location = "self:/Users/impressly/ios/lioniq-ios/example/Demo.xcodeproj">
    </FileRef>
 </Workspace>
