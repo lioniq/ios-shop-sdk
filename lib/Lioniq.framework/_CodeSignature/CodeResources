@@ -4,203 +4,146 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
+		<key>Headers/Lioniq-Swift.h</key>
 		<data>
-		Ef+gfnc2YM0g9JFsKY2fzQpkzs0=
-		</data>
-		<key>3cf97837524dd7445e9d1462e3c4afe2.woff</key>
-		<data>
-		lTaAjYMNiii0yijG8vqLG9KTelU=
-		</data>
-		<key>47151e87c5a8666791a91007de4962da.eot</key>
-		<data>
-		WgJsRQSh4pxCrAUR1k8lfDwNNL8=
-		</data>
-		<key>93cc7aa654ae36b0828716f5ec3159cd.ttf</key>
-		<data>
-		SKeFJqCMoja/rQzuq9YuERO8Vj4=
-		</data>
-		<key>Headers/.DS_Store</key>
-		<data>
-		WgEIMsGrLknP54M7vXxtQLMziL0=
-		</data>
-		<key>Headers/LioniqFrameWork-Swift.h</key>
-		<data>
-		TyFQ6OFm5LjnghULhcRDdX+O43A=
-		</data>
-		<key>Headers/LioniqFrameWork.h</key>
-		<data>
-		EmFny5IRO2lP0n1Im0y9Gwi9fjo=
+		mrqhO2vrgd7ILkDf5DQI2Co6M8M=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		A1FXBDZ8lyiO9xvgftiqoIhHlU0=
+		eIqIsk0D3Nu2sN/qgAk1j3uHkFc=
 		</data>
-		<key>Modules/.DS_Store</key>
+		<key>Modules/Lioniq.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		cvZz0hXRAeAuenCO+P6KDssOK4w=
+		FsOgYLns2ZeFuXDs0LXlTi10ArI=
 		</data>
-		<key>Modules/LioniqFrameWork.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/Lioniq.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		ZkuWfa4v/qvBrk6mam9Y3s73L9Q=
-		</data>
-		<key>Modules/LioniqFrameWork.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		iraDmhpnET9fTBevnrL3NDU6Wco=
+		ueQ9q+CX5BfQnPArpmAiAooIsFc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		NbkyZ+wZD7aSa86KdCULqHG7/lk=
+		X5hSBYnni7rEIHm6tGexYTua780=
 		</data>
-		<key>build.js</key>
+		<key>webviews/cart_build.html</key>
 		<data>
-		x9h03ms5B5iYSvNxauHYod815Uc=
+		cwBHjGK+VMen6imL1qVDiiUozak=
 		</data>
-		<key>cart_build.html</key>
+		<key>webviews/dist/cart.js</key>
 		<data>
-		PYVS4WZ0D+njao9jEJaGmgp4kiI=
+		lnjCa2ULOjqtVIWESWLB3EZdL58=
 		</data>
-		<key>eca2c26759a009a4a9361151efe99e74.svg</key>
+		<key>webviews/dist/commons.chunk.js</key>
 		<data>
-		t1lmUVeWssMv8b4TM3xdDH4Pa8o=
+		91RtPIARr5e6jKgADv31pb6Pg90=
 		</data>
-		<key>index_build.html</key>
+		<key>webviews/dist/main.js</key>
 		<data>
-		hkWryLNoVY1i07/0uAoqaiXPZqg=
+		t82k5l/WyrFQiybt5W8D57fSmZQ=
+		</data>
+		<key>webviews/index_build.html</key>
+		<data>
+		3ssY3CgVELVaL/7YJ+XZWcL7MY0=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>3cf97837524dd7445e9d1462e3c4afe2.woff</key>
+		<key>Headers/Lioniq-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lTaAjYMNiii0yijG8vqLG9KTelU=
+			mrqhO2vrgd7ILkDf5DQI2Co6M8M=
 			</data>
 			<key>hash2</key>
 			<data>
-			cZPqVlRJfSNW0KaQ4+UPOXZ/v/QzXlejRDwUNdZIofI=
+			9wpZAQIlItJqG66T+1kwvNeXpcTy5FxznAY6HVDJzzQ=
 			</data>
 		</dict>
-		<key>47151e87c5a8666791a91007de4962da.eot</key>
+		<key>Modules/Lioniq.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WgJsRQSh4pxCrAUR1k8lfDwNNL8=
+			FsOgYLns2ZeFuXDs0LXlTi10ArI=
 			</data>
 			<key>hash2</key>
 			<data>
-			OK3poGPgzKI2NzNgP07XMbJa3Dz6USoUh/chSkSvQpc=
+			5F/YhaSX8tQfgvseXZON9jAZcpr7dO6cHTASV2Jae1k=
 			</data>
 		</dict>
-		<key>93cc7aa654ae36b0828716f5ec3159cd.ttf</key>
+		<key>Modules/Lioniq.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SKeFJqCMoja/rQzuq9YuERO8Vj4=
+			ueQ9q+CX5BfQnPArpmAiAooIsFc=
 			</data>
 			<key>hash2</key>
 			<data>
-			p+RP8CV3vRK1YbIkNzq3rPo1jyETPnR07ULb+HVYL8w=
-			</data>
-		</dict>
-		<key>Headers/LioniqFrameWork-Swift.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TyFQ6OFm5LjnghULhcRDdX+O43A=
-			</data>
-			<key>hash2</key>
-			<data>
-			bQU1zTNK+PWg9aiJ3VolH1E8jAL0t8shgsvObq0kvg4=
-			</data>
-		</dict>
-		<key>Headers/LioniqFrameWork.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EmFny5IRO2lP0n1Im0y9Gwi9fjo=
-			</data>
-			<key>hash2</key>
-			<data>
-			J3bGA+mwUNKeCkKpL2ICAjvep/Y1+ih4Zw2NrdmWid0=
-			</data>
-		</dict>
-		<key>Modules/LioniqFrameWork.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZkuWfa4v/qvBrk6mam9Y3s73L9Q=
-			</data>
-			<key>hash2</key>
-			<data>
-			4WCGRK9CO5f3sVe4k4qoos/ceoZxSKxDNLakqJRfhWI=
-			</data>
-		</dict>
-		<key>Modules/LioniqFrameWork.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			iraDmhpnET9fTBevnrL3NDU6Wco=
-			</data>
-			<key>hash2</key>
-			<data>
-			m2+xlek0WWlhIdfwHTjF/LQmM+PzpwqECjqXe9VFSR4=
+			4mKgTeqgrMDmdhc8QDHoXjAfnl2UVDxCTdFG5ak+48c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NbkyZ+wZD7aSa86KdCULqHG7/lk=
+			X5hSBYnni7rEIHm6tGexYTua780=
 			</data>
 			<key>hash2</key>
 			<data>
-			zDsT0Tm3vAxiADWA63qFEQjffFAPountfA1CaRsbvYU=
+			ngLVsXlJC1bjjfBAiYibPMAOKuZJgBp1yOmnwfbKtjE=
 			</data>
 		</dict>
-		<key>build.js</key>
+		<key>webviews/cart_build.html</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			x9h03ms5B5iYSvNxauHYod815Uc=
+			cwBHjGK+VMen6imL1qVDiiUozak=
 			</data>
 			<key>hash2</key>
 			<data>
-			MXK6YQyanjS7TZEJt/K29YNzb59WvEpzfZ0kRFUeccA=
+			q6l9XZDTaLoK9Ga8Gtvn3h/3gk5ZeWrjTMTJf46Ao+c=
 			</data>
 		</dict>
-		<key>cart_build.html</key>
+		<key>webviews/dist/cart.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PYVS4WZ0D+njao9jEJaGmgp4kiI=
+			lnjCa2ULOjqtVIWESWLB3EZdL58=
 			</data>
 			<key>hash2</key>
 			<data>
-			G3gAwm1v0Q50bAs1F87RF6FW9jpaDV/kNNeuv0AtTDQ=
+			WkgKVfi0R4S2H+KdMlNMuXJTTlwike2Ba+mgZC7p214=
 			</data>
 		</dict>
-		<key>eca2c26759a009a4a9361151efe99e74.svg</key>
+		<key>webviews/dist/commons.chunk.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			t1lmUVeWssMv8b4TM3xdDH4Pa8o=
+			91RtPIARr5e6jKgADv31pb6Pg90=
 			</data>
 			<key>hash2</key>
 			<data>
-			oUpLdS+SoLJFwf4bzA3iKD7TCm66oLkTpAQlVJ2s1wc=
+			Fs1n4cr6jhp61S3yew5Qc0AGiN4m3W40jzy94wWMQgk=
 			</data>
 		</dict>
-		<key>index_build.html</key>
+		<key>webviews/dist/main.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hkWryLNoVY1i07/0uAoqaiXPZqg=
+			t82k5l/WyrFQiybt5W8D57fSmZQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			/qXxHXrUkU0u641lozXbS/vpf0kGwDZtRMlIhfv3Ss4=
+			Pp/0GcSxVtpWsyGoQ3DNSu1OBOBpzt23oAMAOVZF3oU=
+			</data>
+		</dict>
+		<key>webviews/index_build.html</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3ssY3CgVELVaL/7YJ+XZWcL7MY0=
+			</data>
+			<key>hash2</key>
+			<data>
+			4WBeDI0Osw0l3c5awJmdO57Z4L1/hRUTNfXzrd3x0HA=
 			</data>
 		</dict>
 	</dict>
@@ -221,6 +164,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>
@@ -266,6 +214,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^Info\.plist$</key>
 		<dict>
