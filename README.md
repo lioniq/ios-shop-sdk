@@ -55,3 +55,10 @@ iOS SDK 要求 iOS 8.0 及以上版本, 兼容 Swift 3.0 及 Objective-C. Swift 
     - `Build Options` 设置 `Always Embed Swift Standard Libraries` 为 `Yes`.
     
 **关于如何使用 SDK 请参考 [开发者中心]()。**
+
+Help
+
+欢迎加入官方QQ技术群: 258693280
+
+或邮件: dev@lioniq.com
+
