@@ -27,7 +27,7 @@ class ShoppingCartViewController: UIViewController {
     }
     private func loadWebview() {
         self.wv = LIQWebview(frame: webviewPlaceholder.frame)
-        self.wv?.reloadCart(key: key, secret: secret, userId: userId)
+        self.wv?.reloadCart(key, secret: secret, userId: userId)
         self.view.addSubview(wv!)
     }
 }

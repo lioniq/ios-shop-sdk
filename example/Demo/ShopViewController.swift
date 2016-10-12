@@ -20,7 +20,7 @@ class ShopViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.wv = LIQWebview(frame: webviewPlaceholder.frame)
-        self.wv?.reloadShop(key: key, secret: secret, userId: userId)
+        self.wv?.reloadShop(key, secret: secret, userId: userId)
         self.view.addSubview(wv!)
         self.wv?.delegate = self
     }

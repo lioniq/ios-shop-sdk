@@ -118,22 +118,19 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @protocol LIQWebviewDelegate;
-@class UINavigationBar;
 @class WKWebViewConfiguration;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC6Lioniq10LIQWebview")
 @interface LIQWebview : WKWebView
 @property (nonatomic, strong) id <LIQWebviewDelegate> _Nullable delegate;
-@property (nonatomic, strong) UINavigationBar * _Nullable navigationBar;
-- (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-- (void)reloadShopWithKey:(NSString * _Nonnull)key secret:(NSString * _Nonnull)secret userId:(NSString * _Nullable)userId;
-- (void)reloadCartWithKey:(NSString * _Nonnull)key secret:(NSString * _Nonnull)secret userId:(NSString * _Nullable)userId;
-- (void)reloadShopForUserWithUserId:(NSString * _Nullable)userId;
-- (void)reloadCartForUserWithUserId:(NSString * _Nullable)userId;
-- (NSString * _Nonnull)jsForSetShopUserWithShopUserId:(NSString * _Nonnull)shopUserId;
+- (void)reloadShop:(NSString * _Nonnull)key secret:(NSString * _Nonnull)secret userId:(NSString * _Nullable)userId;
+- (void)reloadCart:(NSString * _Nonnull)key secret:(NSString * _Nonnull)secret userId:(NSString * _Nullable)userId;
+- (void)reloadShopForUser:(NSString * _Nullable)userId;
+- (void)reloadCartForUser:(NSString * _Nullable)userId;
+- (NSString * _Nonnull)jsForSetShopUser:(NSString * _Nonnull)shopUserId;
 @end
 
 @class UIScrollView;
@@ -186,7 +183,7 @@ SWIFT_PROTOCOL("_TtP6Lioniq18LIQWebviewDelegate_")
   colors
   \endcode json objects
 */
-- (void)webviewDidLoadItemWithItemData:(NSDictionary<NSString *, id> * _Nonnull)itemData;
+- (void)webviewDidLoadItem:(NSDictionary<NSString *, id> * _Nonnull)itemData;
 /**
   Added Item to cart callback event
   Parameters:
@@ -198,7 +195,7 @@ SWIFT_PROTOCOL("_TtP6Lioniq18LIQWebviewDelegate_")
   item
   \endcode json object
 */
-- (void)webviewDidAddToCartWithCartItemData:(NSDictionary<NSString *, id> * _Nonnull)cartItemData;
+- (void)webviewDidAddToCart:(NSDictionary<NSString *, id> * _Nonnull)cartItemData;
 /**
   Webview did route to checkout callback event
 */
@@ -217,7 +214,7 @@ SWIFT_PROTOCOL("_TtP6Lioniq18LIQWebviewDelegate_")
   - total_amount: int, total order payable amount
   - fapiao: String, user requested fapiao bill title
 */
-- (void)webviewDidOrderWithOrderData:(NSDictionary<NSString *, id> * _Nonnull)orderData;
+- (void)webviewDidOrder:(NSDictionary<NSString *, id> * _Nonnull)orderData;
 @end
 
 #pragma clang diagnostic pop
