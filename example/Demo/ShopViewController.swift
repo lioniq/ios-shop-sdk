@@ -13,8 +13,8 @@ class ShopViewController: UIViewController {
     var wv: LIQWebview?
     @IBOutlet weak var webviewPlaceholder: UIView!
     
-    let key = "d80bf1f7e31b899f3a22e3c23c6f96eb"
-    let secret = "c35e2b75dd8592875b40b7546310dcb0"
+    let key = "15ef0668e2f7d3234c1706997156c8a2"
+    let secret = "2ab6633650437c8bb29ee5bcdf072034"
     let userId = "xyz123123"
     
     override func viewDidLoad() {
