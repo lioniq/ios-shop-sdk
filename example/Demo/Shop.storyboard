@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7Ni-fZ-xXr">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,7 +8,7 @@
         <!--Shop View Controller-->
         <scene sceneID="6N6-4N-HMX">
             <objects>
-                <viewController storyboardIdentifier="shop" id="QVz-J5-6Q0" customClass="ShopViewController" customModule="LioniqDemoTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="shop" id="QVz-J5-6Q0" customClass="ShopViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xQZ-Vg-3AT"/>
                         <viewControllerLayoutGuide type="bottom" id="3lo-Yc-Qru"/>
@@ -26,7 +25,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2ph-9x-iwG"/>
+                    <navigationItem key="navigationItem" id="2ph-9x-iwG">
+                        <barButtonItem key="leftBarButtonItem" image="bag" id="0eQ-cd-acT"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Q5f-Uh-gvP"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="webviewPlaceholder" destination="vwd-M0-8GP" id="psM-Dk-0Kz"/>
                     </connections>
@@ -57,6 +59,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bag" width="25" height="24"/>
         <image name="first" width="30" height="30"/>
     </resources>
 </document>
