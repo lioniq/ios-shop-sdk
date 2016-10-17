@@ -21,7 +21,12 @@ iOS SDK 要求 iOS 8.0 及以上版本, 兼容 Swift 3.0 及 Objective-C. Swift 
     ````
         pod 'lioniq', '~> 0.2.0'
     ````
+    
+若是 Swift 2.3 请安装 `swift2.3` 分支如下: 
 
+    ````
+        pod install 'Lioniq', :git => 'https://github.com/lioniq/lioniq-ios', :branch => 'swift2.3'
+    ````
 
 2. 运行 `pod install`
 
@@ -54,7 +59,7 @@ iOS SDK 要求 iOS 8.0 及以上版本, 兼容 Swift 3.0 及 Objective-C. Swift 
     - 在 `"Build Setting"` 标签栏
     - `Build Options` 设置 `Always Embed Swift Standard Libraries` 为 `Yes`.
     
-**关于如何使用 SDK 请参考 [开发者中心]()。**
+**关于如何使用 SDK 请参考 [开发者中心](http://docs.lioniq.com/)。**
 
 Help
 
