@@ -19,7 +19,7 @@ class ShopViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.barTintColor = UIColor.orange
+        self.navigationController?.navigationBar.isHidden = true
         
         self.wv = LioniqView(frame: webviewPlaceholder.frame)
         self.wv?.reloadShop(key, secret: secret, userId: userId)
@@ -39,7 +39,7 @@ extension ShopViewController: LioniqViewDelegate {
         self.navigationController?.navigationBar.isHidden = true
         self.tabBarController?.tabBar.isHidden = true
     }
-    func webviewDidAddToCart(dict: Dictionary<String, AnyObject>) {
-        //
+    func webviewDidAddToCart(_ dict: Dictionary<String, AnyObject>) {
+        print("[ShopViewController webviewDidAddToCart] 成功加入购物车")
     }
 }

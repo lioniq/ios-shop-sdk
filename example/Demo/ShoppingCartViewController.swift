@@ -28,6 +28,7 @@ class ShoppingCartViewController: UIViewController {
     private func loadWebview() {
         self.wv = LioniqView(frame: webviewPlaceholder.frame)
         self.wv?.reloadCart(key, secret: secret, userId: userId)
+        self.wv?.delegate = self
         self.view.addSubview(wv!)
     }
     
@@ -48,13 +49,15 @@ extension ShoppingCartViewController: LioniqViewDelegate {
         print("[CartViewController didCheckout]")
         self.tabBarController?.tabBar.isHidden = true
     }
-    func webviewDidOrder(orderData: Dictionary<String, AnyObject>) {
-        print("[CartViewController didOrder]")
+
+    func webviewDidOrder(_ orderData: Dictionary<String, AnyObject>) {
+        print("[CartViewController didOrder]:\(orderData)")
         self.tabBarController?.tabBar.isHidden = true
         
         // 跳转至支付
         self.performSegue(withIdentifier: "payment", sender: orderData)
     }
+    
     func webviewDidItemDetail() {
         print("[CartViewController webviewDidRouteToItemDetail")
         self.tabBarController?.tabBar.isHidden = true
