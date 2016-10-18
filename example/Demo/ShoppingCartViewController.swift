@@ -10,7 +10,7 @@ import UIKit
 import Lioniq
 
 class ShoppingCartViewController: UIViewController {
-    var wv: LIQWebview?
+    var wv: LioniqView?
     @IBOutlet weak var webviewPlaceholder: UIView!
     
     let key = "15ef0668e2f7d3234c1706997156c8a2"
@@ -26,13 +26,20 @@ class ShoppingCartViewController: UIViewController {
         self.loadWebview()
     }
     private func loadWebview() {
-        self.wv = LIQWebview(frame: webviewPlaceholder.frame)
+        self.wv = LioniqView(frame: webviewPlaceholder.frame)
         self.wv?.reloadCart(key, secret: secret, userId: userId)
         self.view.addSubview(wv!)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "payment" {
+            let paymentVC = segue.destination as! PaymentViewController
+            paymentVC.orderData = sender as! Dictionary<String, AnyObject>?
+        }
+    }
 }
 
-extension ShoppingCartViewController: LIQWebviewDelegate {
+extension ShoppingCartViewController: LioniqViewDelegate {
     func webviewDidMain() {
         print("[CartViewController webviewDidRouteToMain]")
         self.tabBarController?.tabBar.isHidden = false
@@ -44,6 +51,9 @@ extension ShoppingCartViewController: LIQWebviewDelegate {
     func webviewDidOrder(orderData: Dictionary<String, AnyObject>) {
         print("[CartViewController didOrder]")
         self.tabBarController?.tabBar.isHidden = true
+        
+        // 跳转至支付
+        self.performSegue(withIdentifier: "payment", sender: orderData)
     }
     func webviewDidItemDetail() {
         print("[CartViewController webviewDidRouteToItemDetail")

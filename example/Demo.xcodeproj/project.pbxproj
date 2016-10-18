@@ -23,6 +23,8 @@
 		9DB4ACE81DACEE9B006314E0 /* LioniqDemoTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4ACE61DACEE9B006314E0 /* LioniqDemoTestUITests.swift */; };
 		9DB4ACEB1DACEEB0006314E0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACE91DACEEB0006314E0 /* Info.plist */; };
 		9DB4ACEC1DACEEB0006314E0 /* LioniqDemoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4ACEA1DACEEB0006314E0 /* LioniqDemoTestTests.swift */; };
+		9DF283BF1DB5B6920054F2F7 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF283BE1DB5B6920054F2F7 /* PaymentViewController.swift */; };
+		9DF283C31DB5B7500054F2F7 /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF283C21DB5B7500054F2F7 /* Payment.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,8 @@
 		9DB4ACE61DACEE9B006314E0 /* LioniqDemoTestUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LioniqDemoTestUITests.swift; sourceTree = "<group>"; };
 		9DB4ACE91DACEEB0006314E0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DB4ACEA1DACEEB0006314E0 /* LioniqDemoTestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LioniqDemoTestTests.swift; sourceTree = "<group>"; };
+		9DF283BE1DB5B6920054F2F7 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		9DF283C21DB5B7500054F2F7 /* Payment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,8 @@
 				9DB4ACDB1DACEE71006314E0 /* ShopViewController.swift */,
 				9DB4ACD91DACEE71006314E0 /* ShoppingCart.storyboard */,
 				9DB4ACDA1DACEE71006314E0 /* ShoppingCartViewController.swift */,
+				9DF283C21DB5B7500054F2F7 /* Payment.storyboard */,
+				9DF283BE1DB5B6920054F2F7 /* PaymentViewController.swift */,
 				9DB4ACD31DACEE71006314E0 /* AppDelegate.swift */,
 				9D20AB971D87D9AF002D568F /* Main.storyboard */,
 				9D20AB9C1D87D9AF002D568F /* LaunchScreen.storyboard */,
@@ -287,6 +293,7 @@
 				9D20AB9E1D87D9AF002D568F /* LaunchScreen.storyboard in Resources */,
 				9DB4ACDD1DACEE71006314E0 /* Assets.xcassets in Resources */,
 				9D20AB991D87D9AF002D568F /* Main.storyboard in Resources */,
+				9DF283C31DB5B7500054F2F7 /* Payment.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +323,7 @@
 				9DB4ACE31DACEE71006314E0 /* ShoppingCartViewController.swift in Sources */,
 				9DB4ACE41DACEE71006314E0 /* ShopViewController.swift in Sources */,
 				9DB4ACDC1DACEE71006314E0 /* AppDelegate.swift in Sources */,
+				9DF283BF1DB5B6920054F2F7 /* PaymentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

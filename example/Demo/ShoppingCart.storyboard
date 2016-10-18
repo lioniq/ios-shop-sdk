@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ki-IJ-WRA">
-                                <frame key="frameInset" width="375" height="667"/>
+                                <frame key="frameInset" width="375" height="618"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -28,11 +28,20 @@
                     <navigationItem key="navigationItem" id="Rlf-1s-bmb"/>
                     <connections>
                         <outlet property="webviewPlaceholder" destination="3ki-IJ-WRA" id="uT6-0q-yAx"/>
+                        <segue destination="0Ft-cR-RuZ" kind="show" identifier="payment" id="PmV-jY-erE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pQe-fn-U80" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2647.1999999999998" y="393.55322338830587"/>
+        </scene>
+        <!--Payment-->
+        <scene sceneID="sFR-s5-626">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Payment" id="0Ft-cR-RuZ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jP0-qF-fWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3166" y="406"/>
         </scene>
         <!--cart-->
         <scene sceneID="vSA-8r-hpa">

@@ -10,7 +10,7 @@ import UIKit
 import Lioniq
 
 class ShopViewController: UIViewController {
-    var wv: LIQWebview?
+    var wv: LioniqView?
     @IBOutlet weak var webviewPlaceholder: UIView!
     
     let key = "15ef0668e2f7d3234c1706997156c8a2"
@@ -21,14 +21,14 @@ class ShopViewController: UIViewController {
         super.viewDidLoad()
         self.navigationController?.navigationBar.barTintColor = UIColor.orange
         
-        self.wv = LIQWebview(frame: webviewPlaceholder.frame)
+        self.wv = LioniqView(frame: webviewPlaceholder.frame)
         self.wv?.reloadShop(key, secret: secret, userId: userId)
         self.view.addSubview(wv!)
         self.wv?.delegate = self
     }
 }
 
-extension ShopViewController: LIQWebviewDelegate {
+extension ShopViewController: LioniqViewDelegate {
     func webviewDidMain() {
         print("[ShopViewController webviewDidRouteToMain]")
         self.navigationController?.navigationBar.isHidden = false
