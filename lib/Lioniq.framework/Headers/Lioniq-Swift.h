@@ -117,13 +117,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
-@protocol LioniqViewDelegate;
+@protocol LIQViewDelegate;
 @class WKWebViewConfiguration;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC6Lioniq10LioniqView")
-@interface LioniqView : WKWebView
-@property (nonatomic, strong) id <LioniqViewDelegate> _Nullable delegate;
+SWIFT_CLASS("_TtC6Lioniq7LIQView")
+@interface LIQView : WKWebView
+@property (nonatomic, strong) id <LIQViewDelegate> _Nullable delegate;
 - (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)reloadShop:(NSString * _Nonnull)key secret:(NSString * _Nonnull)secret userId:(NSString * _Nullable)userId;
@@ -136,20 +136,20 @@ SWIFT_CLASS("_TtC6Lioniq10LioniqView")
 @class UIScrollView;
 @class UIView;
 
-@interface LioniqView (SWIFT_EXTENSION(Lioniq)) <UIScrollViewDelegate>
+@interface LIQView (SWIFT_EXTENSION(Lioniq)) <UIScrollViewDelegate>
 - (UIView * _Nullable)viewForZoomingInScrollView:(UIScrollView * _Nonnull)scrollView;
 @end
 
 @class WKUserContentController;
 @class WKScriptMessage;
 
-@interface LioniqView (SWIFT_EXTENSION(Lioniq)) <WKScriptMessageHandler>
+@interface LIQView (SWIFT_EXTENSION(Lioniq)) <WKScriptMessageHandler>
 - (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
 @end
 
 
-SWIFT_PROTOCOL("_TtP6Lioniq18LioniqViewDelegate_")
-@protocol LioniqViewDelegate
+SWIFT_PROTOCOL("_TtP6Lioniq15LIQViewDelegate_")
+@protocol LIQViewDelegate
 @optional
 /**
   Webview routed to Main view; this is Shop or Cart view

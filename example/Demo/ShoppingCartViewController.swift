@@ -10,7 +10,7 @@ import UIKit
 import Lioniq
 
 class ShoppingCartViewController: UIViewController {
-    var wv: LioniqView?
+    var liqview: LIQView?
     @IBOutlet weak var webviewPlaceholder: UIView!
     
     let key = "15ef0668e2f7d3234c1706997156c8a2"
@@ -26,10 +26,10 @@ class ShoppingCartViewController: UIViewController {
         self.loadWebview()
     }
     private func loadWebview() {
-        self.wv = LioniqView(frame: webviewPlaceholder.frame)
-        self.wv?.reloadCart(key, secret: secret, userId: userId)
-        self.wv?.delegate = self
-        self.view.addSubview(wv!)
+        self.liqview = LIQView(frame: webviewPlaceholder.frame)
+        self.liqview?.reloadCart(key, secret: secret, userId: userId)
+        self.liqview?.delegate = self
+        self.view.addSubview(liqview!)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -40,7 +40,7 @@ class ShoppingCartViewController: UIViewController {
     }
 }
 
-extension ShoppingCartViewController: LioniqViewDelegate {
+extension ShoppingCartViewController: LIQViewDelegate {
     func webviewDidMain() {
         print("[CartViewController webviewDidRouteToMain]")
         self.tabBarController?.tabBar.isHidden = false
