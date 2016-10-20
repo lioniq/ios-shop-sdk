@@ -19,7 +19,7 @@ iOS SDK 要求 iOS 8.0 及以上版本, 兼容 Swift 3.0 及 Objective-C. Swift 
 1. 在 `Podfile` 添加
     
     ````
-        pod 'lioniq', '~> 0.2.0'
+        pod 'lioniq', '~> 0.2.1'
     ````
     
     若是 Swift 2.3 请安装 `swift2.3` 分支如下: 
