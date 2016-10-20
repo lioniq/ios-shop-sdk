@@ -244,8 +244,8 @@
 				TargetAttributes = {
 					9D20AB8F1D87D9AF002D568F = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = ZUHYDF6KZU;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
 					};
 					9D20ABA31D87D9AF002D568F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -467,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Demo",
@@ -485,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Demo",

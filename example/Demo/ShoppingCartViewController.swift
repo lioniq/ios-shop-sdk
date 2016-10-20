@@ -23,9 +23,12 @@ class ShoppingCartViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+        
         self.loadWebview()
     }
     private func loadWebview() {
+        webviewPlaceholder.frame = self.view.frame
         self.liqview = LIQView(frame: webviewPlaceholder.frame)
         self.liqview?.reloadCart(key, secret: secret, userId: userId)
         self.liqview?.delegate = self

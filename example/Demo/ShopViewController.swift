@@ -20,7 +20,7 @@ class ShopViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
-        
+        webviewPlaceholder.frame = self.view.frame
         self.liqview = LIQView(frame: webviewPlaceholder.frame)
         self.liqview?.reloadShop(key, secret: secret, userId: userId)
         self.view.addSubview(liqview!)
