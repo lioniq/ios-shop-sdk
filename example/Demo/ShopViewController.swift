@@ -20,11 +20,30 @@ class ShopViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
+        
+        let liqManager = LIQManager.defaultManager
+        liqManager.setAppKey(appKey: key, appSecret: secret)
+        liqManager.setAppUserId(appUserId: userId)
+        
+        // load shop data
+        if let shopDataUrl = Bundle.main.url(forResource: "shop_data", withExtension: "json") {
+            liqManager.setShopData(shopDataURL: shopDataUrl)
+        }
+        
+        // check for updates
+        liqManager.getUpdates()
+        
+        // load webview
+        loadWebView()
+    }
+    
+    private func loadWebView() {
         webviewPlaceholder.frame = self.view.frame
         self.liqview = LIQView(frame: webviewPlaceholder.frame)
-        self.liqview?.reloadShop(key, secret: secret, userId: userId)
-        self.view.addSubview(liqview!)
-        self.liqview?.delegate = self
+        self.view.addSubview(self.liqview!)
+        
+        self.liqview!.delegate = self
+        self.liqview!.reloadShop()
     }
 }
 

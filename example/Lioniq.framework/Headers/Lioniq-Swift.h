@@ -110,6 +110,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # define SWIFT_UNAVAILABLE __attribute__((unavailable))
 #endif
 #if defined(__has_feature) && __has_feature(modules)
+@import ObjectiveC;
+@import Foundation;
 @import WebKit;
 @import CoreGraphics;
 @import UIKit;
@@ -117,6 +119,69 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+
+SWIFT_CLASS("_TtC6Lioniq13LIQDownloader")
+@interface LIQDownloader : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+@class NSURLSession;
+@class NSURLSessionDownloadTask;
+
+@interface LIQDownloader (SWIFT_EXTENSION(Lioniq)) <NSURLSessionDownloadDelegate, NSURLSessionDelegate, NSURLSessionTaskDelegate>
+- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didFinishDownloadingToURL:(NSURL * _Nonnull)location;
+@end
+
+
+SWIFT_CLASS("_TtC6Lioniq10LIQManager")
+@interface LIQManager : NSObject
+/**
+  Public getters
+*/
+@property (nonatomic, readonly, copy) NSString * _Nullable appKey;
+@property (nonatomic, readonly, copy) NSString * _Nullable appSecret;
+@property (nonatomic, readonly, copy) NSString * _Nullable appUserId;
+@property (nonatomic, readonly, copy) NSString * _Nullable shopData;
+/**
+  Set shop app with APP_KEY and APP_SECRET
+  You can get key/secret from dashboard at https://lioniq.com/
+  <ul>
+    <li>
+      Parameters:
+    </li>
+    <li>
+      appKey: String
+    </li>
+    <li>
+      appSecret: String
+    </li>
+  </ul>
+*/
+- (void)setAppKeyWithAppKey:(NSString * _Nonnull)appKey appSecret:(NSString * _Nonnull)appSecret;
+- (void)setAppUserIdWithAppUserId:(NSString * _Nonnull)appUserId;
+- (void)setShopDataWithShopDataURL:(NSURL * _Nonnull)shopDataURL;
+/**
+  A shared instance of LIQManager
+*/
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LIQManager * _Nonnull defaultManager;)
++ (LIQManager * _Nonnull)defaultManager;
+/**
+  Instantiate LIQManager with APP_KEY and APP_SECRET.
+  Don’t instantiate directly, but prefer to use defaultManager.
+  You can get key/secret from dashboard at https://lioniq.com/
+  \param appKey String
+
+  \param appSecret String
+
+*/
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithAppKey:(NSString * _Nonnull)appKey appSecret:(NSString * _Nonnull)appSecret OBJC_DESIGNATED_INITIALIZER;
+/**
+  Get template updates from API server
+*/
+- (void)getUpdates;
+@end
+
 @protocol LIQViewDelegate;
 @class WKWebViewConfiguration;
 @class NSCoder;
@@ -126,11 +191,15 @@ SWIFT_CLASS("_TtC6Lioniq7LIQView")
 @property (nonatomic, strong) id <LIQViewDelegate> _Nullable delegate;
 - (nonnull instancetype)initWithFrame:(CGRect)frame configuration:(WKWebViewConfiguration * _Nonnull)configuration SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-- (void)reloadShop:(NSString * _Nonnull)key secret:(NSString * _Nonnull)secret userId:(NSString * _Nullable)userId;
-- (void)reloadCart:(NSString * _Nonnull)key secret:(NSString * _Nonnull)secret userId:(NSString * _Nullable)userId;
-- (void)reloadShopForUser:(NSString * _Nullable)userId;
-- (void)reloadCartForUser:(NSString * _Nullable)userId;
-- (NSString * _Nonnull)jsForSetShopUser:(NSString * _Nonnull)shopUserId;
+- (void)reloadShop;
+- (void)reloadCart;
+/**
+  \code
+     Refresh shop user for userId from LIQManager.defaultManager. 
+     If userId is null, will logout user.
+
+  \endcode*/
+- (void)refreshShopUser;
 @end
 
 @class UIScrollView;

@@ -19,22 +19,31 @@ class ShoppingCartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadWebview()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isHidden = true
         
-        self.loadWebview()
+        // reload for user
+        let userId = "xyz123123"
+        reload(userId: userId)
     }
     private func loadWebview() {
         webviewPlaceholder.frame = self.view.frame
         self.liqview = LIQView(frame: webviewPlaceholder.frame)
-        self.liqview?.reloadCart(key, secret: secret, userId: userId)
         self.liqview?.delegate = self
         self.view.addSubview(liqview!)
+        self.liqview?.reloadCart()
     }
     
+    private func reload(userId: String) {
+        LIQManager.defaultManager.setAppUserId(appUserId: userId)
+        self.liqview?.refreshShopUser()
+    }
+    
+    // 跳转至支付界面,传orderData到支付界面,接入支付SDK即可实现订单支付
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "payment" {
             let paymentVC = segue.destination as! PaymentViewController

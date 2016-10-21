@@ -6,19 +6,19 @@
 	<dict>
 		<key>Headers/Lioniq-Swift.h</key>
 		<data>
-		+IwskKwo3DpJVrin9XHI5XBVY94=
+		xuCw//BA50fqYH/C04+v6g+ow8w=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5v6EJE82Hw9Y6g5XNASdmD9ma8Q=
+		8oVdlLfzPHkwhSUoRnThBlBQQQU=
 		</data>
 		<key>Modules/Lioniq.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		1lTQD8O15OBhAf4NQxe9BrBExmo=
+		/eA0jk1xGEU3+4C/3xmkQy3uP/k=
 		</data>
 		<key>Modules/Lioniq.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		4sprQ5cwCGnj+VIVKCRjrQZX5r0=
+		eEsbg0/lIYp5Pf5AbJO5g9u5jtg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>webviews/dist/cart.js</key>
 		<data>
-		40jzun6TC47RCrmctdcXx/6n09g=
+		Nd7Z0OOIMCdA7+an9iG75EykoyY=
 		</data>
 		<key>webviews/dist/commons.chunk.js</key>
 		<data>
-		10SiLPt2BaXXeite9r7iwFlGFLc=
+		gA2BG13TgakOkiMrCP40nXrunsk=
 		</data>
 		<key>webviews/dist/main.js</key>
 		<data>
-		pcdxcyb84VArNsN/Kdh5V2pyW90=
+		a6GjhGo7dGnc3L8fJTkwFUAjMq0=
 		</data>
 		<key>webviews/index_build.html</key>
 		<data>
-		3ssY3CgVELVaL/7YJ+XZWcL7MY0=
+		Tj/Sgx5Wfdxp+slInZtIaAbaTTA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -51,33 +51,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+IwskKwo3DpJVrin9XHI5XBVY94=
+			xuCw//BA50fqYH/C04+v6g+ow8w=
 			</data>
 			<key>hash2</key>
 			<data>
-			poDgpYgDRrpiEt5kIgLGZKshx+MxAd6O8wozY4uwU4E=
+			ZWf/NpMtNXH1gfBDH+OoLe38W6amoO+Y2RLC8o9TQeo=
 			</data>
 		</dict>
 		<key>Modules/Lioniq.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1lTQD8O15OBhAf4NQxe9BrBExmo=
+			/eA0jk1xGEU3+4C/3xmkQy3uP/k=
 			</data>
 			<key>hash2</key>
 			<data>
-			IHgusAmLAKw4eWstVL7wrZziGurhtyZv2O3/PclzxIk=
+			JSk2/5Hym4xDjF7Q4iPruCZYfFFynD3t6GUjxX8Zevo=
 			</data>
 		</dict>
 		<key>Modules/Lioniq.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4sprQ5cwCGnj+VIVKCRjrQZX5r0=
+			eEsbg0/lIYp5Pf5AbJO5g9u5jtg=
 			</data>
 			<key>hash2</key>
 			<data>
-			PhPdyXtC+o/4WRbN7abTeusFNzSn4588Wft6Rglfzco=
+			ekK/gKu4PPRQxoQkiDoFbTa4W7zEbTUjgRrK0O3+Pbw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -106,44 +106,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			40jzun6TC47RCrmctdcXx/6n09g=
+			Nd7Z0OOIMCdA7+an9iG75EykoyY=
 			</data>
 			<key>hash2</key>
 			<data>
-			s3gqgZ9N6sxGvwNz5+HpRy3g/he/tk61SiFP7PuuBY0=
+			sAoBrpHGbiK1LbEoFOSh9uGxxLxnupbZyzzDcbpQUns=
 			</data>
 		</dict>
 		<key>webviews/dist/commons.chunk.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			10SiLPt2BaXXeite9r7iwFlGFLc=
+			gA2BG13TgakOkiMrCP40nXrunsk=
 			</data>
 			<key>hash2</key>
 			<data>
-			oZu2Wz3U5z211KyEASXX3JSOJ0Z3nqzmEkZ/6xYSzO0=
+			STCsfeU+u+AAL48vRB1/Nbh5ThKB+bepO9Gh/mlpNM4=
 			</data>
 		</dict>
 		<key>webviews/dist/main.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pcdxcyb84VArNsN/Kdh5V2pyW90=
+			a6GjhGo7dGnc3L8fJTkwFUAjMq0=
 			</data>
 			<key>hash2</key>
 			<data>
-			TncROxhyhCbMlLEBl9jnY0/3xsSnfJYj6YWy1+vaZO0=
+			wXhqAuREwdQvZrPwwA8XGgu0LEZarU4czTceqtgkKOM=
 			</data>
 		</dict>
 		<key>webviews/index_build.html</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3ssY3CgVELVaL/7YJ+XZWcL7MY0=
+			Tj/Sgx5Wfdxp+slInZtIaAbaTTA=
 			</data>
 			<key>hash2</key>
 			<data>
-			4WBeDI0Osw0l3c5awJmdO57Z4L1/hRUTNfXzrd3x0HA=
+			lCFlyDFdqbeccVCRIVqruU9WQX0GE9C0oWv5t2l5hKc=
 			</data>
 		</dict>
 	</dict>
