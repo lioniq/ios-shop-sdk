@@ -19,7 +19,7 @@ iOS SDK 要求 iOS 8.0 及以上版本, 兼容 Swift 3.0 及 Objective-C. Swift 
 1. 在 `Podfile` 添加
     
     ````
-        pod 'lioniq', '~> 0.2.3'
+        pod 'lioniq', '~> 0.3.0'
     ````
     
     若是 Swift 2.3 请安装 `swift2.3` 分支如下: 
@@ -66,4 +66,78 @@ Help
 欢迎加入官方QQ技术群: 258693280
 
 或邮件: dev@lioniq.com
+
+
+
+PaymentViewController:
+    - 购物车结算界面跳转至 PaymentViewController, 传值`orderData: Dictionary<String, AnyObject>`到 PaymentViewController
+````
+func webviewDidOrder(_ orderData: Dictionary<String, AnyObject>) {
+    self.performSegue(withIdentifier: "payment", sender: orderData)
+}
+
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if segue.identifier == "payment" {
+        let paymentVC = segue.destination as! PaymentViewController
+        paymentVC.orderData = sender as! Dictionary<String, AnyObject>?
+    }
+}
+````
+
+
+    - PaymentViewController JSON对象转成orderData: Dictionary<String, AnyObject>, orderData 包含order的所有信息:
+````
+`orderData`
+
+key | value | notes
+----|-------|-------
+`key` | `String` | id
+`order_no` | `String` | 订单号码
+`cart_items` | `[cartItemData]` | 购物列表项数组
+`address` | `addressData` | 地址对象
+`subtotal_amount` | `int` | 订单小计 (产品单价 x 数量，未计运费). 1 = ¥1.00
+`shipping_amount` | `int` | 运费总额. 1 = ¥1.00
+`total_amount` | `int` | 订单总金额. 1 = ¥1.00
+`fapiao` | `String` | 发票抬头
+`created_at` | `DateTime` | 订单下定日期
+`updated_at` | `DateTime` | 订单更新日期
+
+````
+
+
+
+    - 解析 orderData: Dictionary<String, AnyObject>
+````
+// 订单key
+let orderKey = orderData["key"] as? String
+
+// 实付款金额
+let payableAmount = orderData["total_amount"] as? Int
+
+// 订单号
+let orderNo = orderData["order_no"] as? String
+
+````
+
+
+
+    - 接入支付SDK, 生成Charge对象
+````
+
+// init charge object, and send to API
+let charge = ChargeData(channel: channel, orderNo: orderNo, orderKey: orderKey, amount: payableAmount)
+
++ params
+
+param | class | notes
+------|-------|--------
+`channel` | `String` | 支付渠道，如"alipay","wx"等，具体请查看Pingpp开发者文档
+`orderNo` | `String` | 订单编号
+`payableAmount` | `Int` | 付款金额
+
+````
+
+
+
+
 

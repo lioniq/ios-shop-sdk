@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'Lioniq'
-  s.version      = '0.2.3'
+  s.version      = '0.3.0'
   s.summary      = 'LionIQ iOS SDK'
   s.description  = <<-DESC
                    移动电商APP插件，让你今天就可以完成电商功能。
