@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'Lioniq'
-  s.version      = '0.2.3'
+  s.version      = '0.3.0'
   s.summary      = 'LionIQ iOS SDK'
   s.description  = <<-DESC
                    移动电商APP插件，让你今天就可以完成电商功能。
@@ -13,10 +13,9 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.source       = { :git => 'https://github.com/lioniq/lioniq-ios.git', :tag => s.version }
   s.requires_arc = true
-  s.default_subspec = 'lib'
 
-  s.subspec 'lib' do |lib|
-    lib.resource = 'lib/*.framework'
-  end
+  s.ios.vendored_frameworks = 'lib/Lioniq.framework'
+  s.ios.library = 'z'
+
 end
 

@@ -120,19 +120,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 
-SWIFT_CLASS("_TtC6Lioniq13LIQDownloader")
-@interface LIQDownloader : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-@end
-
-@class NSURLSession;
-@class NSURLSessionDownloadTask;
-
-@interface LIQDownloader (SWIFT_EXTENSION(Lioniq)) <NSURLSessionDownloadDelegate, NSURLSessionDelegate, NSURLSessionTaskDelegate>
-- (void)URLSession:(NSURLSession * _Nonnull)session downloadTask:(NSURLSessionDownloadTask * _Nonnull)downloadTask didFinishDownloadingToURL:(NSURL * _Nonnull)location;
-@end
-
-
 SWIFT_CLASS("_TtC6Lioniq10LIQManager")
 @interface LIQManager : NSObject
 /**
@@ -141,7 +128,6 @@ SWIFT_CLASS("_TtC6Lioniq10LIQManager")
 @property (nonatomic, readonly, copy) NSString * _Nullable appKey;
 @property (nonatomic, readonly, copy) NSString * _Nullable appSecret;
 @property (nonatomic, readonly, copy) NSString * _Nullable appUserId;
-@property (nonatomic, readonly, copy) NSString * _Nullable shopData;
 /**
   Set shop app with APP_KEY and APP_SECRET
   You can get key/secret from dashboard at https://lioniq.com/
