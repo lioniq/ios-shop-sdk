@@ -141,7 +141,6 @@ SWIFT_CLASS("_TtC6Lioniq10LIQManager")
 @property (nonatomic, readonly, copy) NSString * _Nullable appKey;
 @property (nonatomic, readonly, copy) NSString * _Nullable appSecret;
 @property (nonatomic, readonly, copy) NSString * _Nullable appUserId;
-@property (nonatomic, readonly, copy) NSString * _Nullable shopData;
 /**
   Set shop app with APP_KEY and APP_SECRET
   You can get key/secret from dashboard at https://lioniq.com/

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Lioniq-Swift.h</key>
 		<data>
-		xuCw//BA50fqYH/C04+v6g+ow8w=
+		C3hyPpFPAJuzCdU7zTkcfZR+w3A=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/Lioniq.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		JyuQjKOceJBJtqTQkcajFPAWQPk=
+		AxiH2yuHcO4u0iOL1/XU4FbIO7g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,11 +51,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xuCw//BA50fqYH/C04+v6g+ow8w=
+			C3hyPpFPAJuzCdU7zTkcfZR+w3A=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZWf/NpMtNXH1gfBDH+OoLe38W6amoO+Y2RLC8o9TQeo=
+			BiymX653/MBSxxwh0lCOwl8YKKtwMxuryRbMZDgNZjQ=
 			</data>
 		</dict>
 		<key>Modules/Lioniq.swiftmodule/x86_64.swiftdoc</key>
@@ -73,11 +73,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JyuQjKOceJBJtqTQkcajFPAWQPk=
+			AxiH2yuHcO4u0iOL1/XU4FbIO7g=
 			</data>
 			<key>hash2</key>
 			<data>
-			k7W7zy7FWxHHUdeuylM9iPGVxnWvqKDn1MahO6ohqrE=
+			r4Hd7MhuBPRINEVe+ie5jRxgj+XsXa2xJErX9+GVR64=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
