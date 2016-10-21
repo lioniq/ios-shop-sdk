@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8oVdlLfzPHkwhSUoRnThBlBQQQU=
+		CB+h9m3ZfTPdeoCmRHunMEzOJ6E=
 		</data>
 		<key>Modules/Lioniq.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/Lioniq.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		AxiH2yuHcO4u0iOL1/XU4FbIO7g=
+		QbZSjK3+AkLxHgV9e1iRMZolqrI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -73,11 +73,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AxiH2yuHcO4u0iOL1/XU4FbIO7g=
+			QbZSjK3+AkLxHgV9e1iRMZolqrI=
 			</data>
 			<key>hash2</key>
 			<data>
-			r4Hd7MhuBPRINEVe+ie5jRxgj+XsXa2xJErX9+GVR64=
+			U2GMdKzUnPPm71y25EfO4FQ7PzE8DEk84C7aT2Vf+tY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -165,11 +165,6 @@
 			<key>weight</key>
 			<real>1100</real>
 		</dict>
-		<key>^Base\.lproj/</key>
-		<dict>
-			<key>weight</key>
-			<real>1010</real>
-		</dict>
 		<key>^version.plist$</key>
 		<true/>
 	</dict>
@@ -214,11 +209,6 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
-		</dict>
-		<key>^Base\.lproj/</key>
-		<dict>
-			<key>weight</key>
-			<real>1010</real>
 		</dict>
 		<key>^Info\.plist$</key>
 		<dict>

@@ -13,10 +13,9 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.source       = { :git => 'https://github.com/lioniq/lioniq-ios.git', :tag => s.version }
   s.requires_arc = true
-  s.default_subspec = 'lib'
 
-  s.subspec 'lib' do |lib|
-    lib.resource = 'lib/*.framework'
-  end
+  s.ios.vendored_frameworks = 'lib/Lioniq.framework'
+  s.ios.library = 'z'
+
 end
 

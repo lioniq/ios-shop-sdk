@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		118ECD991DBA63E700971BBF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 118ECD981DBA63E700971BBF /* libz.tbd */; };
+		118ECD9A1DBA658500971BBF /* Lioniq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118ECD951DBA5BCC00971BBF /* Lioniq.framework */; };
 		9D20AB991D87D9AF002D568F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D20AB971D87D9AF002D568F /* Main.storyboard */; };
 		9D20AB9E1D87D9AF002D568F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D20AB9C1D87D9AF002D568F /* LaunchScreen.storyboard */; };
-		9DB4AC881DACDEAD006314E0 /* Lioniq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB4AC871DACDEAD006314E0 /* Lioniq.framework */; };
-		9DB4AC8A1DACDEB6006314E0 /* Lioniq.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB4AC871DACDEAD006314E0 /* Lioniq.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9DB4ACDC1DACEE71006314E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD31DACEE71006314E0 /* AppDelegate.swift */; };
 		9DB4ACDD1DACEE71006314E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD41DACEE71006314E0 /* Assets.xcassets */; };
 		9DB4ACDE1DACEE71006314E0 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD51DACEE71006314E0 /* Base.lproj */; };
@@ -57,7 +57,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9DB4AC8A1DACDEB6006314E0 /* Lioniq.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,12 +64,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		118ECD951DBA5BCC00971BBF /* Lioniq.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lioniq.framework; path = ../lib/Lioniq.framework; sourceTree = "<group>"; };
+		118ECD981DBA63E700971BBF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		9D20AB901D87D9AF002D568F /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D20AB981D87D9AF002D568F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D20AB9D1D87D9AF002D568F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D20ABA41D87D9AF002D568F /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D20ABAF1D87D9AF002D568F /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DB4AC871DACDEAD006314E0 /* Lioniq.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lioniq.framework; sourceTree = "<group>"; };
 		9DB4ACD31DACEE71006314E0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DB4ACD41DACEE71006314E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DB4ACD51DACEE71006314E0 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
@@ -89,7 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DB4AC881DACDEAD006314E0 /* Lioniq.framework in Frameworks */,
+				118ECD9A1DBA658500971BBF /* Lioniq.framework in Frameworks */,
+				118ECD991DBA63E700971BBF /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,12 +111,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		118ECD971DBA63E700971BBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				118ECD981DBA63E700971BBF /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9D20AB871D87D9AF002D568F = {
 			isa = PBXGroup;
 			children = (
-				9DB4AC871DACDEAD006314E0 /* Lioniq.framework */,
+				118ECD951DBA5BCC00971BBF /* Lioniq.framework */,
 				9D20AB921D87D9AF002D568F /* Demo */,
 				9D20AB911D87D9AF002D568F /* Products */,
+				118ECD971DBA63E700971BBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
