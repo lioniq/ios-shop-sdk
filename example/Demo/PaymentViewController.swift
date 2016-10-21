@@ -12,15 +12,15 @@ class PaymentViewController: UIViewController {
     
     var orderData: Dictionary<String, AnyObject>?
     
-    @IBOutlet weak var totalMountLabel: UILabel!
+    @IBOutlet weak var totalAmountLabel: UILabel!
     @IBOutlet weak var orderNoLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = false
         // 订单总金额
-        let amount = self.orderData?["total_amount"] as! Int / 100
-        self.totalMountLabel.text = "\(amount)"
+        let amount = self.orderData?["total_amount"] as! Double / 100
+        self.totalAmountLabel.text = "¥\(amount)"
         // 订单号
         self.orderNoLabel.text = self.orderData?["order_no"] as? String
         

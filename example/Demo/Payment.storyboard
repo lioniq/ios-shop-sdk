@@ -272,7 +272,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="orderNoLabel" destination="eD7-MC-DuX" id="Bn7-jN-gTy"/>
-                        <outlet property="totalMountLabel" destination="9gT-JJ-JrI" id="n5z-1F-Oc0"/>
+                        <outlet property="totalAmountLabel" destination="9gT-JJ-JrI" id="TTq-Gr-Ygg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N2v-Kh-gzj" userLabel="First Responder" sceneMemberID="firstResponder"/>

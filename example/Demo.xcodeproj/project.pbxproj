@@ -19,10 +19,6 @@
 		9DB4ACE21DACEE71006314E0 /* ShoppingCart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD91DACEE71006314E0 /* ShoppingCart.storyboard */; };
 		9DB4ACE31DACEE71006314E0 /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4ACDA1DACEE71006314E0 /* ShoppingCartViewController.swift */; };
 		9DB4ACE41DACEE71006314E0 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4ACDB1DACEE71006314E0 /* ShopViewController.swift */; };
-		9DB4ACE71DACEE9B006314E0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACE51DACEE9B006314E0 /* Info.plist */; };
-		9DB4ACE81DACEE9B006314E0 /* LioniqDemoTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4ACE61DACEE9B006314E0 /* LioniqDemoTestUITests.swift */; };
-		9DB4ACEB1DACEEB0006314E0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACE91DACEEB0006314E0 /* Info.plist */; };
-		9DB4ACEC1DACEEB0006314E0 /* LioniqDemoTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4ACEA1DACEEB0006314E0 /* LioniqDemoTestTests.swift */; };
 		9DEF7DFD1DB9DD9B00FA1318 /* shop_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DEF7DFC1DB9DD9B00FA1318 /* shop_data.json */; };
 		9DF283BF1DB5B6920054F2F7 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF283BE1DB5B6920054F2F7 /* PaymentViewController.swift */; };
 		9DF283C31DB5B7500054F2F7 /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF283C21DB5B7500054F2F7 /* Payment.storyboard */; };
@@ -83,10 +79,6 @@
 		9DB4ACD91DACEE71006314E0 /* ShoppingCart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShoppingCart.storyboard; sourceTree = "<group>"; };
 		9DB4ACDA1DACEE71006314E0 /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
 		9DB4ACDB1DACEE71006314E0 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
-		9DB4ACE51DACEE9B006314E0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DB4ACE61DACEE9B006314E0 /* LioniqDemoTestUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LioniqDemoTestUITests.swift; sourceTree = "<group>"; };
-		9DB4ACE91DACEEB0006314E0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DB4ACEA1DACEEB0006314E0 /* LioniqDemoTestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LioniqDemoTestTests.swift; sourceTree = "<group>"; };
 		9DEF7DFC1DB9DD9B00FA1318 /* shop_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shop_data.json; sourceTree = "<group>"; };
 		9DF283BE1DB5B6920054F2F7 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		9DF283C21DB5B7500054F2F7 /* Payment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
@@ -123,8 +115,6 @@
 			children = (
 				9DB4AC871DACDEAD006314E0 /* Lioniq.framework */,
 				9D20AB921D87D9AF002D568F /* Demo */,
-				9D20ABA71D87D9AF002D568F /* DemoTests */,
-				9D20ABB21D87D9AF002D568F /* DemoUITests */,
 				9D20AB911D87D9AF002D568F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -157,24 +147,6 @@
 				9DB4ACD41DACEE71006314E0 /* Assets.xcassets */,
 			);
 			path = Demo;
-			sourceTree = "<group>";
-		};
-		9D20ABA71D87D9AF002D568F /* DemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				9DB4ACE91DACEEB0006314E0 /* Info.plist */,
-				9DB4ACEA1DACEEB0006314E0 /* LioniqDemoTestTests.swift */,
-			);
-			path = DemoTests;
-			sourceTree = "<group>";
-		};
-		9D20ABB21D87D9AF002D568F /* DemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9DB4ACE51DACEE9B006314E0 /* Info.plist */,
-				9DB4ACE61DACEE9B006314E0 /* LioniqDemoTestUITests.swift */,
-			);
-			path = DemoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,7 +277,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DB4ACEB1DACEEB0006314E0 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +284,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DB4ACE71DACEE9B006314E0 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +305,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DB4ACEC1DACEEB0006314E0 /* LioniqDemoTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,7 +312,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DB4ACE81DACEE9B006314E0 /* LioniqDemoTestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,16 +17,16 @@ iOS SDK 要求 iOS 8.0 及以上版本, 兼容 Swift 3.0 及 Objective-C. Swift 
 
 ### 使用 CocoaPods
 1. 在 `Podfile` 添加
-    
-    ````
-        pod 'lioniq', '~> 0.3.0'
-    ````
-    
-    若是 Swift 2.3 请安装 `swift2.3` 分支如下: 
 
-    ````
-        pod install 'Lioniq', :git => 'https://github.com/lioniq/lioniq-ios', :branch => 'swift2.3'
-    ````
+````
+pod 'lioniq'
+````
+
+若是 Swift 2.3 请安装 `swift2.3` 分支如下: 
+
+````
+pod install 'Lioniq', :git => 'https://github.com/lioniq/lioniq-ios', :branch => 'swift2.3'
+````
 
 2. 运行 `pod install`
 
@@ -36,106 +36,83 @@ iOS SDK 要求 iOS 8.0 及以上版本, 兼容 Swift 3.0 及 Objective-C. Swift 
 
 2. 依赖 Frameworks：
 
-    - 必需在工程中导入 `Lioniq.framework`
+- 必需在工程中导入 `Lioniq.framework`
 
 3. 添加Embedded Binaries: 
 
-    在Xcode中，选择你的工程设置项: 
+在Xcode中，选择你的工程设置项: 
 
-    - 选中 `"TARGETS"` 一栏, 在 `"General"` 标签栏, 在 `Embedded Binaries` 中添加这个 `Lioniq.framework`
-    - 添加成功后会自动在 `Linked Framework and Libraries` 中自动添加这个 `Lioniq.framework`
-    - 如果只在 `Linked Framework and Libraries` 中添加 `Lioniq.framwork` 会导致库无法载入。
+- 选中 `"TARGETS"` 一栏, 在 `"General"` 标签栏, 在 `Embedded Binaries` 中添加这个 `Lioniq.framework`
+- 添加成功后会自动在 `Linked Framework and Libraries` 中自动添加这个 `Lioniq.framework`
+- 如果只在 `Linked Framework and Libraries` 中添加 `Lioniq.framwork` 会导致库无法载入。
 
 4. 添加Copy Files: 
 
-    - 在Xcode中，选择你的工程设置项
-    - 选中 `"TARGETS"` 一栏, 在 `"Build Phases"` 标签栏, 点击 `+` 创建 `New Copy Files Phase` 项目
-    - 设置 `Destination` 为 `Frameworks`, 点击 `+` 然后选择要 `Copy` 的此 `Lioniq.framework`
+- 在Xcode中，选择你的工程设置项
+- 选中 `"TARGETS"` 一栏, 在 `"Build Phases"` 标签栏, 点击 `+` 创建 `New Copy Files Phase` 项目
+- 设置 `Destination` 为 `Frameworks`, 点击 `+` 然后选择要 `Copy` 的此 `Lioniq.framework`
 
 5. 在 Objective-C 项目中，因为此 framework 为 swift 编写，需要在 Xcode 中配置: 
 
-    - 选择你的工程设置项
-    - 选中 `"TARGETS"` 一栏
-    - 在 `"Build Setting"` 标签栏
-    - `Build Options` 设置 `Always Embed Swift Standard Libraries` 为 `Yes`.
-    
-**关于如何使用 SDK 请参考 [开发者中心](http://docs.lioniq.com/)。**
+- 选择你的工程设置项
+- 选中 `"TARGETS"` 一栏
+- 在 `"Build Setting"` 标签栏
+- `Build Options` 设置 `Always Embed Swift Standard Libraries` 为 `Yes`.
 
-Help
+### 支付处理  PaymentViewController
 
-欢迎加入官方QQ技术群: 258693280
+LionIQ 插件收到消费者结算下订单后会回传订单对象回给APP, 这时可以透过代理方式解析 `orderData` 的 `JSON` 字典。以下是我们在生产运行中的APP使用的范例: 
 
-或邮件: dev@lioniq.com
-
-
-
-PaymentViewController:
-    - 购物车结算界面跳转至 PaymentViewController, 传值`orderData: Dictionary<String, AnyObject>`到 PaymentViewController
 ````
+/** 
+CartViewController.swift
+
+购物车结算界面跳转至 PaymentViewController 会传值`orderData: Dictionary<String, AnyObject>`到 PaymentViewController
+**/
 func webviewDidOrder(_ orderData: Dictionary<String, AnyObject>) {
-    self.performSegue(withIdentifier: "payment", sender: orderData)
+self.performSegue(withIdentifier: "payment", sender: orderData)
 }
 
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "payment" {
-        let paymentVC = segue.destination as! PaymentViewController
-        paymentVC.orderData = sender as! Dictionary<String, AnyObject>?
-    }
+if segue.identifier == "payment" {
+let paymentVC = segue.destination as! PaymentViewController
+paymentVC.orderData = sender as! Dictionary<String, AnyObject>?
 }
-````
-
-
-    - PaymentViewController JSON对象转成orderData: Dictionary<String, AnyObject>, orderData 包含order的所有信息:
-````
-`orderData`
-
-key | value | notes
-----|-------|-------
-`key` | `String` | id
-`order_no` | `String` | 订单号码
-`cart_items` | `[cartItemData]` | 购物列表项数组
-`address` | `addressData` | 地址对象
-`subtotal_amount` | `int` | 订单小计 (产品单价 x 数量，未计运费). 1 = ¥1.00
-`shipping_amount` | `int` | 运费总额. 1 = ¥1.00
-`total_amount` | `int` | 订单总金额. 1 = ¥1.00
-`fapiao` | `String` | 发票抬头
-`created_at` | `DateTime` | 订单下定日期
-`updated_at` | `DateTime` | 订单更新日期
+}
 
 ````
 
+然后在支付界面 `PaymentViewController` 解析订单信息，可以提供按钮给用户支付（如: 支付宝、微信、百度钱包、等等)
 
-
-    - 解析 orderData: Dictionary<String, AnyObject>
 ````
-// 订单key
-let orderKey = orderData["key"] as? String
 
-// 实付款金额
-let payableAmount = orderData["total_amount"] as? Int
+/**
+PaymentViewController.swift
+
+支付页面通常需要生成请求参数提交给支付平台. Pingxx 支付SDK需要以下参数: 
+- channel: String, 支付渠道
+- orderNo: String, 订单号码
+- amount: Int, 订单金额
+**/
 
 // 订单号
 let orderNo = orderData["order_no"] as? String
 
-````
+// 实付款金额
+let payableAmount = orderData["total_amount"] as? Int
 
+// 渠道
+let channel = "alipay" 
 
-
-    - 接入支付SDK, 生成Charge对象
-````
-
-// init charge object, and send to API
-let charge = ChargeData(channel: channel, orderNo: orderNo, orderKey: orderKey, amount: payableAmount)
-
-+ params
-
-param | class | notes
-------|-------|--------
-`channel` | `String` | 支付渠道，如"alipay","wx"等，具体请查看Pingpp开发者文档
-`orderNo` | `String` | 订单编号
-`payableAmount` | `Int` | 付款金额
+// 订单产品列表项 - 用于显示订单产品
+let orderItems = orderData["cart_items"] as? Dictionary<String, AnyObject>
 
 ````
+
+
+**关于如何使用 SDK 请参考 [开发者中心](http://docs.lioniq.com/)**
+欢迎加入官方QQ技术群: 258693280
+或邮件: dev@lioniq.com
 
 
 
