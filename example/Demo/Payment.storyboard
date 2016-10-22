@@ -271,8 +271,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="orderNoLabel" destination="eD7-MC-DuX" id="Bn7-jN-gTy"/>
-                        <outlet property="totalAmountLabel" destination="9gT-JJ-JrI" id="TTq-Gr-Ygg"/>
+                        <outlet property="orderNoLabel" destination="eD7-MC-DuX" id="RH4-0J-41Y"/>
+                        <outlet property="totalAmountLabel" destination="9gT-JJ-JrI" id="W8D-zb-H3W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N2v-Kh-gzj" userLabel="First Responder" sceneMemberID="firstResponder"/>

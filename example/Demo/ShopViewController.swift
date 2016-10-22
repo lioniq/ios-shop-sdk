@@ -19,15 +19,16 @@ class ShopViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.isHidden = true
+        self.navigationController?.navigationBar.hidden = true
         
         let liqManager = LIQManager.defaultManager
-        liqManager.setAppKey(appKey: key, appSecret: secret)
-        liqManager.setAppUserId(appUserId: userId)
+        liqManager.setAppKey(key, appSecret: secret)
+        liqManager.setAppUserId(userId)
         
         // load shop data
-        if let shopDataUrl = Bundle.main.url(forResource: "shop_data", withExtension: "json") {
-            liqManager.setShopData(shopDataURL: shopDataUrl)
+        if let shopDataUrl = NSBundle.mainBundle().pathForResource("shop_data", ofType: "json") {
+            let shopDataUrl = NSURL(fileURLWithPath: shopDataUrl)
+            liqManager.setShopData(shopDataUrl)
         }
         
         // check for updates
@@ -50,15 +51,15 @@ class ShopViewController: UIViewController {
 extension ShopViewController: LIQViewDelegate {
     func webviewDidMain() {
         print("[ShopViewController webviewDidRouteToMain]")
-        self.navigationController?.navigationBar.isHidden = false
-        self.tabBarController?.tabBar.isHidden = false
+        self.navigationController?.navigationBar.hidden = false
+        self.tabBarController?.tabBar.hidden = false
     }
     func webviewDidItemDetail() {
         print("[ShopViewController webviewDidRouteToItemDetail]")
-        self.navigationController?.navigationBar.isHidden = true
-        self.tabBarController?.tabBar.isHidden = true
+        self.navigationController?.navigationBar.hidden = true
+        self.tabBarController?.tabBar.hidden = true
     }
-    func webviewDidAddToCart(_ dict: Dictionary<String, AnyObject>) {
+    func webviewDidAddToCart(dict: Dictionary<String, AnyObject>) {
         print("[ShopViewController webviewDidAddToCart] 成功加入购物车")
     }
 }
