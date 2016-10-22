@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		118ECD991DBA63E700971BBF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 118ECD981DBA63E700971BBF /* libz.tbd */; };
-		118ECD9A1DBA658500971BBF /* Lioniq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118ECD951DBA5BCC00971BBF /* Lioniq.framework */; };
 		9D20AB991D87D9AF002D568F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D20AB971D87D9AF002D568F /* Main.storyboard */; };
 		9D20AB9E1D87D9AF002D568F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D20AB9C1D87D9AF002D568F /* LaunchScreen.storyboard */; };
+		9DA35A461DBB1A7F00CD4A11 /* Lioniq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118ECD951DBA5BCC00971BBF /* Lioniq.framework */; };
+		9DA35A471DBB1A7F00CD4A11 /* Lioniq.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118ECD951DBA5BCC00971BBF /* Lioniq.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9DB4ACDC1DACEE71006314E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD31DACEE71006314E0 /* AppDelegate.swift */; };
 		9DB4ACDD1DACEE71006314E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD41DACEE71006314E0 /* Assets.xcassets */; };
 		9DB4ACDE1DACEE71006314E0 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD51DACEE71006314E0 /* Base.lproj */; };
@@ -51,12 +51,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DB4AC8B1DACDEB6006314E0 /* Embed Frameworks */ = {
+		9DA35A481DBB1A7F00CD4A11 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				9DA35A471DBB1A7F00CD4A11 /* Lioniq.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,8 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				118ECD9A1DBA658500971BBF /* Lioniq.framework in Frameworks */,
-				118ECD991DBA63E700971BBF /* libz.tbd in Frameworks */,
+				9DA35A461DBB1A7F00CD4A11 /* Lioniq.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +170,7 @@
 				9D20AB8D1D87D9AF002D568F /* Frameworks */,
 				9D20AB8E1D87D9AF002D568F /* Resources */,
 				9D4914181D8F8B30001E8195 /* CopyFiles */,
-				9DB4AC8B1DACDEB6006314E0 /* Embed Frameworks */,
+				9DA35A481DBB1A7F00CD4A11 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
