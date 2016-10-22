@@ -59,25 +59,79 @@ pod install 'Lioniq', :git => 'https://github.com/lioniq/lioniq-ios', :branch =>
 - 在 `"Build Setting"` 标签栏
 - `Build Options` 设置 `Always Embed Swift Standard Libraries` 为 `Yes`.
 
+### 快速引入
+
+在 `ViewController` 中引入插件生成 `LIQWebview` 的实例就可以引入商城、及购物车界面。
+(使用前请到官网后台申请生成 `APP` 的 `APP_KEY` 和 `APP_SECRET` 帐号权限)
+
+想了解更多，请查看[技术文档](http://docs.lioniq.com)
+
+````
+import UIKit
+import Lioniq
+
+class ShopViewController: UIViewController {
+
+    // Storyboard 添加一个普通 View 作为占位 (目前无法直接 Storyboard 使用)
+    @IBOutlet weak var webviewPlaceholder: UIView!
+
+    // 插件 webview 
+    var liqview: LIQView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // 针对 storyboard 7plus/6plus bug
+        self.webviewPlaceholder.frame = self.view.frame 
+
+        // 添加到本view
+        self.liqview = LIQView(frame: webviewPlaceholder.frame)
+        self.view.addSubview(self.liqview)
+
+        // LionIQ 单列管理对象
+        let liqManager = LIQManager.defaultManager
+        liqManager.setAppKey(appKey: "我的_APP_KEY", appSecret: "我的_APP_SECRET")
+
+        // 设置代理
+        self.liqview.delegate = self 
+
+        // 实现商城
+        self.liqview.reloadShop
+
+        // OPTIONAL 可选: 
+        // 自动更新模版
+        liqManager.getUpdates()
+
+        // OPTIONAL 可选: 
+        // 载入商城离线信息, 从后台下载保存为 shop_data.json 后拉进项目即可
+        if let shopDataUrl = Bundle.main.url(forResource: "shop_data", withExtension: "json") {
+            liqManager.setShopData(shopDataURL: shopDataUrl)
+        }
+    }
+}
+````
+
 ### 支付处理  PaymentViewController
 
 LionIQ 插件收到消费者结算下订单后会回传订单对象回给APP, 这时可以透过代理方式解析 `orderData` 的 `JSON` 字典。以下是我们在生产运行中的APP使用的范例: 
 
+想了解更多，请查看[技术文档](http://docs.lioniq.com)
+
 ````
 /** 
-CartViewController.swift
+    CartViewController.swift
 
-购物车结算界面跳转至 PaymentViewController 会传值`orderData: Dictionary<String, AnyObject>`到 PaymentViewController
+    购物车结算界面跳转至 PaymentViewController 会传值`orderData: Dictionary<String, AnyObject>`到 PaymentViewController
 **/
 func webviewDidOrder(_ orderData: Dictionary<String, AnyObject>) {
-self.performSegue(withIdentifier: "payment", sender: orderData)
+    self.performSegue(withIdentifier: "payment", sender: orderData)
 }
 
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-if segue.identifier == "payment" {
-let paymentVC = segue.destination as! PaymentViewController
-paymentVC.orderData = sender as! Dictionary<String, AnyObject>?
-}
+    if segue.identifier == "payment" {
+        let paymentVC = segue.destination as! PaymentViewController
+        paymentVC.orderData = sender as! Dictionary<String, AnyObject>?
+    }
 }
 
 ````
@@ -111,6 +165,7 @@ let orderItems = orderData["cart_items"] as? Dictionary<String, AnyObject>
 
 
 **关于如何使用 SDK 请参考 [开发者中心](http://docs.lioniq.com/)**
+
 欢迎加入官方QQ技术群: 258693280
 或邮件: dev@lioniq.com
 
