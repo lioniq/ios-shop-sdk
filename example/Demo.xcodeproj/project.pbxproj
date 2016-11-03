@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		9D20AB991D87D9AF002D568F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D20AB971D87D9AF002D568F /* Main.storyboard */; };
 		9D20AB9E1D87D9AF002D568F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D20AB9C1D87D9AF002D568F /* LaunchScreen.storyboard */; };
-		9DA35A461DBB1A7F00CD4A11 /* Lioniq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118ECD951DBA5BCC00971BBF /* Lioniq.framework */; };
-		9DA35A471DBB1A7F00CD4A11 /* Lioniq.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118ECD951DBA5BCC00971BBF /* Lioniq.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9DA60E311DCB2A9D00EBE544 /* Lioniq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA60E2D1DCB2A7800EBE544 /* Lioniq.framework */; };
+		9DA60E321DCB2A9D00EBE544 /* Lioniq.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA60E2D1DCB2A7800EBE544 /* Lioniq.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9DA60E351DCB2D2100EBE544 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA60E341DCB2D2100EBE544 /* ShopViewController.swift */; };
 		9DB4ACDC1DACEE71006314E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD31DACEE71006314E0 /* AppDelegate.swift */; };
 		9DB4ACDD1DACEE71006314E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD41DACEE71006314E0 /* Assets.xcassets */; };
 		9DB4ACDE1DACEE71006314E0 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD51DACEE71006314E0 /* Base.lproj */; };
@@ -18,7 +19,6 @@
 		9DB4ACE11DACEE71006314E0 /* Shop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD81DACEE71006314E0 /* Shop.storyboard */; };
 		9DB4ACE21DACEE71006314E0 /* ShoppingCart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD91DACEE71006314E0 /* ShoppingCart.storyboard */; };
 		9DB4ACE31DACEE71006314E0 /* ShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4ACDA1DACEE71006314E0 /* ShoppingCartViewController.swift */; };
-		9DB4ACE41DACEE71006314E0 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4ACDB1DACEE71006314E0 /* ShopViewController.swift */; };
 		9DEF7DFD1DB9DD9B00FA1318 /* shop_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DEF7DFC1DB9DD9B00FA1318 /* shop_data.json */; };
 		9DF283BF1DB5B6920054F2F7 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF283BE1DB5B6920054F2F7 /* PaymentViewController.swift */; };
 		9DF283C31DB5B7500054F2F7 /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF283C21DB5B7500054F2F7 /* Payment.storyboard */; };
@@ -51,13 +51,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DA35A481DBB1A7F00CD4A11 /* Embed Frameworks */ = {
+		9DA60E331DCB2A9D00EBE544 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9DA35A471DBB1A7F00CD4A11 /* Lioniq.framework in Embed Frameworks */,
+				9DA60E321DCB2A9D00EBE544 /* Lioniq.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,13 +65,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		118ECD951DBA5BCC00971BBF /* Lioniq.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lioniq.framework; path = ../lib/Lioniq.framework; sourceTree = "<group>"; };
 		118ECD981DBA63E700971BBF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		9D20AB901D87D9AF002D568F /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D20AB981D87D9AF002D568F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D20AB9D1D87D9AF002D568F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D20ABA41D87D9AF002D568F /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D20ABAF1D87D9AF002D568F /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA60E2D1DCB2A7800EBE544 /* Lioniq.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lioniq.framework; sourceTree = "<group>"; };
+		9DA60E341DCB2D2100EBE544 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		9DB4ACD31DACEE71006314E0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DB4ACD41DACEE71006314E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DB4ACD51DACEE71006314E0 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
@@ -79,7 +80,6 @@
 		9DB4ACD81DACEE71006314E0 /* Shop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Shop.storyboard; sourceTree = "<group>"; };
 		9DB4ACD91DACEE71006314E0 /* ShoppingCart.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShoppingCart.storyboard; sourceTree = "<group>"; };
 		9DB4ACDA1DACEE71006314E0 /* ShoppingCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCartViewController.swift; sourceTree = "<group>"; };
-		9DB4ACDB1DACEE71006314E0 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		9DEF7DFC1DB9DD9B00FA1318 /* shop_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shop_data.json; sourceTree = "<group>"; };
 		9DF283BE1DB5B6920054F2F7 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		9DF283C21DB5B7500054F2F7 /* Payment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DA35A461DBB1A7F00CD4A11 /* Lioniq.framework in Frameworks */,
+				9DA60E311DCB2A9D00EBE544 /* Lioniq.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +122,7 @@
 		9D20AB871D87D9AF002D568F = {
 			isa = PBXGroup;
 			children = (
-				118ECD951DBA5BCC00971BBF /* Lioniq.framework */,
+				9DA60E2D1DCB2A7800EBE544 /* Lioniq.framework */,
 				9D20AB921D87D9AF002D568F /* Demo */,
 				9D20AB911D87D9AF002D568F /* Products */,
 				118ECD971DBA63E700971BBF /* Frameworks */,
@@ -143,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				9DB4ACD81DACEE71006314E0 /* Shop.storyboard */,
-				9DB4ACDB1DACEE71006314E0 /* ShopViewController.swift */,
+				9DA60E341DCB2D2100EBE544 /* ShopViewController.swift */,
 				9DB4ACD91DACEE71006314E0 /* ShoppingCart.storyboard */,
 				9DB4ACDA1DACEE71006314E0 /* ShoppingCartViewController.swift */,
 				9DF283C21DB5B7500054F2F7 /* Payment.storyboard */,
@@ -170,7 +170,7 @@
 				9D20AB8D1D87D9AF002D568F /* Frameworks */,
 				9D20AB8E1D87D9AF002D568F /* Resources */,
 				9D4914181D8F8B30001E8195 /* CopyFiles */,
-				9DA35A481DBB1A7F00CD4A11 /* Embed Frameworks */,
+				9DA60E331DCB2A9D00EBE544 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -304,8 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA60E351DCB2D2100EBE544 /* ShopViewController.swift in Sources */,
 				9DB4ACE31DACEE71006314E0 /* ShoppingCartViewController.swift in Sources */,
-				9DB4ACE41DACEE71006314E0 /* ShopViewController.swift in Sources */,
 				9DB4ACDC1DACEE71006314E0 /* AppDelegate.swift in Sources */,
 				9DF283BF1DB5B6920054F2F7 /* PaymentViewController.swift in Sources */,
 			);

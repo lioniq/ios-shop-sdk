@@ -1,64 +1,101 @@
 //
 //  FirstViewController.swift
-//  lioniq-demo
+//  Example
 //
-//  Created by JERRY LIU on 21/8/2016.
-//  Copyright © 2016 ONTHETALL. All rights reserved.
+//  Created by JERRY LIU on 25/9/2016.
+//  Copyright © 2016 OTT. All rights reserved.
 //
 
 import UIKit
 import Lioniq
 
 class ShopViewController: UIViewController {
-    var liqview: LIQView?
+    @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     @IBOutlet weak var webviewPlaceholder: UIView!
     
-    let key = "15ef0668e2f7d3234c1706997156c8a2"
-    let secret = "2ab6633650437c8bb29ee5bcdf072034"
-    let userId = "xyz123123"
+    var liqView: LIQView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.isHidden = true
         
-        let liqManager = LIQManager.defaultManager
-        liqManager.setAppKey(appKey: key, appSecret: secret)
-        liqManager.setAppUserId(appUserId: userId)
+        // lioniq shop app settings
+        let key = "15ef0668e2f7d3234c1706997156c8a2"
+        let secret = "2ab6633650437c8bb29ee5bcdf072034"
+        let userId = "xyz123123"
+        
+        let lm = LIQManager.defaultManager
+        lm.setAppKey(appKey: key, appSecret: secret)
+        lm.setAppUserId(appUserId: userId)
         
         // load shop data
         if let shopDataUrl = Bundle.main.url(forResource: "shop_data", withExtension: "json") {
-            liqManager.setShopData(shopDataURL: shopDataUrl)
+            lm.setShopData(shopDataURL: shopDataUrl)
         }
         
         // check for updates
-        liqManager.getUpdates()
-        
+        lm.getUpdates()
+
         // load webview
         loadWebView()
+        createSubViews()
     }
     
     private func loadWebView() {
         webviewPlaceholder.frame = self.view.frame
-        self.liqview = LIQView(frame: webviewPlaceholder.frame)
-        self.view.addSubview(self.liqview!)
+        self.liqView = LIQView(frame: webviewPlaceholder.frame)
+        self.view.addSubview(self.liqView)
         
-        self.liqview!.delegate = self
-        self.liqview!.reloadShop()
+        self.liqView.delegate = self
+        self.liqView.reloadShop()
     }
+    
+    private func createSubViews() {
+        //SearchBar
+        let searchBarTextField = self.searchBar.value(forKey: "searchField") as! UITextField
+        searchBarTextField.textAlignment = NSTextAlignment.center
+        searchBarTextField.textColor = UIColor.white
+        //调整视图层次
+        self.view.bringSubview(toFront: headerView)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+    }
+    
 }
 
 extension ShopViewController: LIQViewDelegate {
     func webviewDidMain() {
         print("[ShopViewController webviewDidRouteToMain]")
-        self.navigationController?.navigationBar.isHidden = false
         self.tabBarController?.tabBar.isHidden = false
+        self.headerView.isHidden = false
     }
     func webviewDidItemDetail() {
         print("[ShopViewController webviewDidRouteToItemDetail]")
-        self.navigationController?.navigationBar.isHidden = true
+        self.headerView.isHidden = true
         self.tabBarController?.tabBar.isHidden = true
     }
     func webviewDidAddToCart(_ dict: Dictionary<String, AnyObject>) {
-        print("[ShopViewController webviewDidAddToCart] 成功加入购物车")
+        //
     }
 }
+
+extension ShopViewController: UISearchBarDelegate {
+    func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
+        
+        let searchVC = LIQSearchViewController()
+        searchVC.delegate = self.liqView
+        
+        self.navigationController?.pushViewController(searchVC, animated: true) 
+        
+        return false
+    }
+}
+
+
+
+
+
