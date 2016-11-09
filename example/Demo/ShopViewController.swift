@@ -35,7 +35,7 @@ class ShopViewController: UIViewController {
         }
         
         // check for updates
-        lm.getUpdates()
+        // lm.getUpdates()
 
         // load webview
         loadWebView()
@@ -70,11 +70,13 @@ class ShopViewController: UIViewController {
 extension ShopViewController: LIQViewDelegate {
     func webviewDidMain() {
         print("[ShopViewController webviewDidRouteToMain]")
+//        self.navigationController?.navigationBar.isHidden = false
         self.tabBarController?.tabBar.isHidden = false
         self.headerView.isHidden = false
     }
     func webviewDidItemDetail() {
         print("[ShopViewController webviewDidRouteToItemDetail]")
+//        self.navigationController?.navigationBar.isHidden = true
         self.headerView.isHidden = true
         self.tabBarController?.tabBar.isHidden = true
     }
@@ -85,11 +87,8 @@ extension ShopViewController: LIQViewDelegate {
 
 extension ShopViewController: UISearchBarDelegate {
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
-        
-        let searchVC = LIQSearchViewController()
-        searchVC.delegate = self.liqView
-        
-        self.navigationController?.pushViewController(searchVC, animated: true) 
+        // Webview Search
+        self.performSegue(withIdentifier: "search", sender: nil)
         
         return false
     }

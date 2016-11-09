@@ -11,11 +11,12 @@ import Lioniq
 
 class ShoppingCartViewController: UIViewController {
     var liqview: LIQView?
+    let lm = LIQManager.defaultManager
     @IBOutlet weak var webviewPlaceholder: UIView!
     
     let key = "15ef0668e2f7d3234c1706997156c8a2"
     let secret = "2ab6633650437c8bb29ee5bcdf072034"
-    let userId = "xyz123123"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +28,12 @@ class ShoppingCartViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = true
         
         // reload for user
-        let userId = "xyz123123"
-        reload(userId: userId)
+        if let userId = lm.appUserId {
+            reload(userId: userId)
+        } else {
+            reload(userId: "xyz123123")
+        }
+        
     }
     private func loadWebview() {
         webviewPlaceholder.frame = self.view.frame

@@ -1,10 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wce-sf-R4G">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wce-sf-R4G">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,10 +19,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="su9-7V-d3n">
-                                <rect key="frame" x="0.0" y="44" width="375" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHc-WA-Qox">
-                                        <rect key="frame" x="15" y="22" width="35" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="35" id="jFY-cy-IVK"/>
                                             <constraint firstAttribute="height" constant="35" id="vdd-xH-lPW"/>
@@ -33,14 +28,12 @@
                                         <state key="normal" title="    "/>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bag" highlightedImage="bag" translatesAutoresizingMaskIntoConstraints="NO" id="lsv-98-MvG">
-                                        <rect key="frame" x="15" y="22" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="pl6-o7-Fmb"/>
                                             <constraint firstAttribute="width" constant="20" id="t89-dh-uvb"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="闪电包" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0T-rw-c0B">
-                                        <rect key="frame" x="0.0" y="42" width="50" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="TsQ-Zc-Em0"/>
                                             <constraint firstAttribute="width" constant="50" id="xWM-CI-X79"/>
@@ -50,7 +43,6 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ace-ls-6zR">
-                                        <rect key="frame" x="325" y="22" width="35" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="A2P-QZ-z6o"/>
                                             <constraint firstAttribute="width" constant="35" id="NGT-Jw-3f6"/>
@@ -58,14 +50,12 @@
                                         <state key="normal" title="     "/>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scan" highlightedImage="scan" translatesAutoresizingMaskIntoConstraints="NO" id="QOe-4y-7tc">
-                                        <rect key="frame" x="342" y="24" width="16" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="16" id="R5A-VK-wDb"/>
                                             <constraint firstAttribute="width" constant="16" id="VAl-nJ-iEO"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="扫一扫" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHu-4y-oSr">
-                                        <rect key="frame" x="325" y="42" width="50" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="WfI-FZ-8C1"/>
                                             <constraint firstAttribute="width" constant="50" id="ahU-gu-k8j"/>
@@ -75,7 +65,6 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <searchBar contentMode="redraw" searchBarStyle="minimal" text="逛逛商城" translatesAutoresizingMaskIntoConstraints="NO" id="CER-R5-GSV">
-                                        <rect key="frame" x="55" y="10" width="265" height="52"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
                                             <outlet property="delegate" destination="QSc-38-SkL" id="ZQD-UV-Oah"/>
@@ -110,11 +99,11 @@
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tIG-cq-3bl">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <frame key="frameInset" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hzT-rm-JTK">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <frame key="frameInset" width="375" height="667"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -136,11 +125,20 @@
                         <outlet property="headerView" destination="su9-7V-d3n" id="fch-wo-ZJ6"/>
                         <outlet property="searchBar" destination="CER-R5-GSV" id="wbb-ka-d24"/>
                         <outlet property="webviewPlaceholder" destination="hzT-rm-JTK" id="3TL-Z3-hsQ"/>
+                        <segue destination="3dC-XQ-jMo" kind="show" identifier="search" id="aGh-JJ-fnM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RDL-LR-4lH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3495.1999999999998" y="-558.17091454272872"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="9SW-Sd-kKy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="3dC-XQ-jMo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B07-4Y-lr3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4082" y="-725"/>
         </scene>
         <!--shop-->
         <scene sceneID="ygW-eR-cX4">
