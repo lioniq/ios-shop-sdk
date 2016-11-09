@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		9D20AB991D87D9AF002D568F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D20AB971D87D9AF002D568F /* Main.storyboard */; };
 		9D20AB9E1D87D9AF002D568F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D20AB9C1D87D9AF002D568F /* LaunchScreen.storyboard */; };
-		9DA35A461DBB1A7F00CD4A11 /* Lioniq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 118ECD951DBA5BCC00971BBF /* Lioniq.framework */; };
-		9DA35A471DBB1A7F00CD4A11 /* Lioniq.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 118ECD951DBA5BCC00971BBF /* Lioniq.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9DB4ACDC1DACEE71006314E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD31DACEE71006314E0 /* AppDelegate.swift */; };
 		9DB4ACDD1DACEE71006314E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD41DACEE71006314E0 /* Assets.xcassets */; };
 		9DB4ACDE1DACEE71006314E0 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD51DACEE71006314E0 /* Base.lproj */; };
@@ -22,6 +20,10 @@
 		9DEF7DFD1DB9DD9B00FA1318 /* shop_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DEF7DFC1DB9DD9B00FA1318 /* shop_data.json */; };
 		9DF283BF1DB5B6920054F2F7 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF283BE1DB5B6920054F2F7 /* PaymentViewController.swift */; };
 		9DF283C31DB5B7500054F2F7 /* Payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF283C21DB5B7500054F2F7 /* Payment.storyboard */; };
+		9DF4C6921DD2BD1700094BE1 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF4C6911DD2BD1700094BE1 /* Search.storyboard */; };
+		9DF4C6941DD2BD1D00094BE1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF4C6931DD2BD1D00094BE1 /* SearchViewController.swift */; };
+		9DF4C6971DD2BDD300094BE1 /* Lioniq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF4C6951DD2BDCB00094BE1 /* Lioniq.framework */; };
+		9DF4C6981DD2BDD300094BE1 /* Lioniq.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF4C6951DD2BDCB00094BE1 /* Lioniq.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,13 +53,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DA35A481DBB1A7F00CD4A11 /* Embed Frameworks */ = {
+		9DF4C6991DD2BDD300094BE1 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9DA35A471DBB1A7F00CD4A11 /* Lioniq.framework in Embed Frameworks */,
+				9DF4C6981DD2BDD300094BE1 /* Lioniq.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,7 +67,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		118ECD951DBA5BCC00971BBF /* Lioniq.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lioniq.framework; path = ../lib/Lioniq.framework; sourceTree = "<group>"; };
 		118ECD981DBA63E700971BBF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		9D20AB901D87D9AF002D568F /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D20AB981D87D9AF002D568F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,6 +84,9 @@
 		9DEF7DFC1DB9DD9B00FA1318 /* shop_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shop_data.json; sourceTree = "<group>"; };
 		9DF283BE1DB5B6920054F2F7 /* PaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		9DF283C21DB5B7500054F2F7 /* Payment.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Payment.storyboard; sourceTree = "<group>"; };
+		9DF4C6911DD2BD1700094BE1 /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		9DF4C6931DD2BD1D00094BE1 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9DF4C6951DD2BDCB00094BE1 /* Lioniq.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lioniq.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DA35A461DBB1A7F00CD4A11 /* Lioniq.framework in Frameworks */,
+				9DF4C6971DD2BDD300094BE1 /* Lioniq.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +126,7 @@
 		9D20AB871D87D9AF002D568F = {
 			isa = PBXGroup;
 			children = (
-				118ECD951DBA5BCC00971BBF /* Lioniq.framework */,
+				9DF4C6951DD2BDCB00094BE1 /* Lioniq.framework */,
 				9D20AB921D87D9AF002D568F /* Demo */,
 				9D20AB911D87D9AF002D568F /* Products */,
 				118ECD971DBA63E700971BBF /* Frameworks */,
@@ -148,6 +152,8 @@
 				9DB4ACDA1DACEE71006314E0 /* ShoppingCartViewController.swift */,
 				9DF283C21DB5B7500054F2F7 /* Payment.storyboard */,
 				9DF283BE1DB5B6920054F2F7 /* PaymentViewController.swift */,
+				9DF4C6911DD2BD1700094BE1 /* Search.storyboard */,
+				9DF4C6931DD2BD1D00094BE1 /* SearchViewController.swift */,
 				9DB4ACD31DACEE71006314E0 /* AppDelegate.swift */,
 				9DEF7DFC1DB9DD9B00FA1318 /* shop_data.json */,
 				9D20AB971D87D9AF002D568F /* Main.storyboard */,
@@ -170,7 +176,7 @@
 				9D20AB8D1D87D9AF002D568F /* Frameworks */,
 				9D20AB8E1D87D9AF002D568F /* Resources */,
 				9D4914181D8F8B30001E8195 /* CopyFiles */,
-				9DA35A481DBB1A7F00CD4A11 /* Embed Frameworks */,
+				9DF4C6991DD2BDD300094BE1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,6 +281,7 @@
 				9DEF7DFD1DB9DD9B00FA1318 /* shop_data.json in Resources */,
 				9DB4ACDF1DACEE71006314E0 /* Info.plist in Resources */,
 				9DB4ACDE1DACEE71006314E0 /* Base.lproj in Resources */,
+				9DF4C6921DD2BD1700094BE1 /* Search.storyboard in Resources */,
 				9DB4ACE11DACEE71006314E0 /* Shop.storyboard in Resources */,
 				9D20AB9E1D87D9AF002D568F /* LaunchScreen.storyboard in Resources */,
 				9DB4ACDD1DACEE71006314E0 /* Assets.xcassets in Resources */,
@@ -304,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF4C6941DD2BD1D00094BE1 /* SearchViewController.swift in Sources */,
 				9DB4ACE31DACEE71006314E0 /* ShoppingCartViewController.swift in Sources */,
 				9DB4ACE41DACEE71006314E0 /* ShopViewController.swift in Sources */,
 				9DB4ACDC1DACEE71006314E0 /* AppDelegate.swift in Sources */,
