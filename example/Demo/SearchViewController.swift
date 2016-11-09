@@ -42,4 +42,8 @@ extension SearchViewController: LIQViewDelegate {
         self.navigationController?.navigationBar.isHidden = true
         self.tabBarController?.tabBar.isHidden = true
     }
+    
+    func webviewDidAddToCart(_ cartItemData: Dictionary<String, AnyObject>) {
+        print("DidAddToCart:\(cartItemData)")
+    }
 }

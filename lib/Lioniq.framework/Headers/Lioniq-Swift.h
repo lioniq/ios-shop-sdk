@@ -358,6 +358,7 @@ SWIFT_CLASS("_TtC6Lioniq7LIQView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)reloadShop;
 - (void)reloadCart;
+- (void)reloadSearch;
 /**
   \code
      Refresh shop user for userId from LIQManager.defaultManager. 
@@ -457,6 +458,10 @@ SWIFT_PROTOCOL("_TtP6Lioniq15LIQViewDelegate_")
   - fapiao: String, user requested fapiao bill title
 */
 - (void)webviewDidOrder:(NSDictionary<NSString *, id> * _Nonnull)orderData;
+/**
+  Webview did cancel event. Used for cancel button from Search view.
+*/
+- (void)webviewDidCancel;
 @end
 
 #pragma clang diagnostic pop
