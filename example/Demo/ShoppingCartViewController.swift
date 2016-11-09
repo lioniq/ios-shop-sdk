@@ -11,6 +11,8 @@ import Lioniq
 
 class ShoppingCartViewController: UIViewController {
     var liqview: LIQView?
+    let lm = LIQManager.defaultManager
+    
     @IBOutlet weak var webviewPlaceholder: UIView!
     
     override func viewDidLoad() {
@@ -23,8 +25,12 @@ class ShoppingCartViewController: UIViewController {
         self.navigationController?.navigationBar.hidden = true
         
         // reload for user
-        let userId = "xyz123123"
-        reload(userId)
+        if let userId = lm.appUserId {
+            reload(userId)
+        } else {
+            reload("xyz123123")
+        }
+        
     }
     private func loadWebview() {
         webviewPlaceholder.frame = self.view.frame
