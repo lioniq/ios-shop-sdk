@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		9D20AB991D87D9AF002D568F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D20AB971D87D9AF002D568F /* Main.storyboard */; };
 		9D20AB9E1D87D9AF002D568F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D20AB9C1D87D9AF002D568F /* LaunchScreen.storyboard */; };
-		9DA60E311DCB2A9D00EBE544 /* Lioniq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA60E2D1DCB2A7800EBE544 /* Lioniq.framework */; };
-		9DA60E321DCB2A9D00EBE544 /* Lioniq.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA60E2D1DCB2A7800EBE544 /* Lioniq.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9D8F83191DD4075B008B9E10 /* Lioniq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8F83171DD4074E008B9E10 /* Lioniq.framework */; };
+		9D8F831A1DD4075B008B9E10 /* Lioniq.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D8F83171DD4074E008B9E10 /* Lioniq.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9DA60E351DCB2D2100EBE544 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA60E341DCB2D2100EBE544 /* ShopViewController.swift */; };
 		9DB4ACDC1DACEE71006314E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD31DACEE71006314E0 /* AppDelegate.swift */; };
 		9DB4ACDD1DACEE71006314E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DB4ACD41DACEE71006314E0 /* Assets.xcassets */; };
@@ -59,7 +59,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9DA60E321DCB2A9D00EBE544 /* Lioniq.framework in Embed Frameworks */,
+				9D8F831A1DD4075B008B9E10 /* Lioniq.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,7 +73,7 @@
 		9D20AB9D1D87D9AF002D568F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D20ABA41D87D9AF002D568F /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D20ABAF1D87D9AF002D568F /* DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DA60E2D1DCB2A7800EBE544 /* Lioniq.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lioniq.framework; sourceTree = "<group>"; };
+		9D8F83171DD4074E008B9E10 /* Lioniq.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lioniq.framework; sourceTree = "<group>"; };
 		9DA60E341DCB2D2100EBE544 /* ShopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		9DB4ACD31DACEE71006314E0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DB4ACD41DACEE71006314E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DA60E311DCB2A9D00EBE544 /* Lioniq.framework in Frameworks */,
+				9D8F83191DD4075B008B9E10 /* Lioniq.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +126,7 @@
 		9D20AB871D87D9AF002D568F = {
 			isa = PBXGroup;
 			children = (
-				9DA60E2D1DCB2A7800EBE544 /* Lioniq.framework */,
+				9D8F83171DD4074E008B9E10 /* Lioniq.framework */,
 				9D20AB921D87D9AF002D568F /* Demo */,
 				9D20AB911D87D9AF002D568F /* Products */,
 				118ECD971DBA63E700971BBF /* Frameworks */,
@@ -235,8 +235,9 @@
 				TargetAttributes = {
 					9D20AB8F1D87D9AF002D568F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ZUHYDF6KZU;
 						LastSwiftMigration = 0800;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					9D20ABA31D87D9AF002D568F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -457,7 +458,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZUHYDF6KZU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Demo",
@@ -476,7 +478,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZUHYDF6KZU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Demo",
