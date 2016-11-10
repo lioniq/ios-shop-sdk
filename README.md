@@ -59,7 +59,7 @@ iOS SDK 要求 iOS 8.0 及以上版本, 兼容 Swift 3.0 及 Objective-C. Swift 
     - 在 `"Build Setting"` 标签栏
     - `Build Options` 设置 `Always Embed Swift Standard Libraries` 为 `Yes`.
     
-## 项目引入
+## 商城集成
 
 在 `ViewController` 中引入插件生成 `LIQWebview` 的实例就可以引入商城、及购物车界面。
 (使用前请到官网后台申请生成 `APP` 的 `APP_KEY` 和 `APP_SECRET` 帐号权限)
@@ -110,6 +110,90 @@ class ShopViewController: UIViewController {
     }
 }
 ````
+
+### 购物车集成 CartViewController
+
+购物车一样使用 `LIQView` 就可以实现，使用 `reloadCart()` 即可。LionIQ 不需要另外登陆也不需要迁移你的用户信息，所有购物车只需要用户ID，用 `LIQManager` 的 `setAppUserId` 方式。
+
+````
+import UIKit
+import Lioniq
+
+class CartViewController: UIViewController {
+
+    // Storyboard 添加一个普通 View 作为占位 (目前无法直接 Storyboard 使用)
+    @IBOutlet weak var webviewPlaceholder: UIView!
+
+    // 插件 webview 
+    var liqview: LIQView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // 针对 storyboard 7plus/6plus bug
+        self.webviewPlaceholder.frame = self.view.frame 
+
+        // 添加到本view
+        self.liqview = LIQView(frame: webviewPlaceholder.frame)
+        self.view.addSubview(self.liqview)
+
+        // 设置代理
+        self.liqview.delegate = self 
+
+        // 实现购物车
+        self.liqview.reloadCart
+    }
+
+    overide func viewDidAppear() {
+        // 购物车出现时通知用户登陆状态
+        LIQManager.defaultManager.setAppUserId(appUserId: "USER_ID")
+        self.liqview.refreshShopUser()
+    }
+}
+````
+
+### 搜索集成 SearchViewController
+
+商城搜索组件，可以查看项目 Demo 项目在商城页面的搜索框绑定点击事件过度到搜索页面。点击 Cancel 按钮后可以通过代理方式 pop 回到商城。
+
+````
+import UIKit
+import Lioniq
+
+class SearchViewController: UIViewController {
+    // Storyboard 添加一个普通 View 作为占位 (目前无法直接 Storyboard 使用)
+    @IBOutlet weak var webviewPlaceholder: UIView!
+
+    // 插件 webview 
+    var liqview: LIQView!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // 针对 storyboard 7plus/6plus bug
+        self.webviewPlaceholder.frame = self.view.frame 
+
+        // 添加到本view
+        self.liqview = LIQView(frame: webviewPlaceholder.frame)
+        self.view.addSubview(self.liqview)
+
+        // 设置代理
+        self.liqview.delegate = self 
+
+        // 实现搜索
+        self.liqview.reloadSearch
+    }
+}
+
+extension SearchViewController: LIQViewDelegate {
+    // 点击取消后 pop 回到商城页面
+    func webviewDidCancel() {
+        self.navigationController?.popViewControllerAnimated(true)
+    }
+}
+
+````
+
 
 ### 支付处理  PaymentViewController
 
